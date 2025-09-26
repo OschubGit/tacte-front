@@ -1,0 +1,39 @@
+ARG ENV
+
+#---------------------------------------------------------------------#
+
+FROM node:20-alpine as node_build
+WORKDIR /var/www/html
+EXPOSE 3000
+
+RUN npm install -g npm@latest
+
+#---------------------------------------------------------------------#
+
+FROM node_build as node_dev
+
+RUN apk --no-cache add bash nano
+
+CMD ["/bin/sh", "-c", "npm install && npm run dev"]
+
+#---------------------------------------------------------------------#
+
+FROM node_build as node_testing
+
+ARG APP_FOLDER
+COPY --chown=node:node ./${APP_FOLDER} .
+RUN chown node:node . && find . -type d -exec chmod 755 {} \+ && find . -type f -exec chmod 744 {} \+
+
+USER node
+RUN npm install && npm run build
+CMD ["/bin/sh", "-c", "npm run start"]
+
+#---------------------------------------------------------------------#
+
+FROM node_testing as node_prod
+
+#---------------------------------------------------------------------#
+
+FROM node_${ENV}
+
+#---------------------------------------------------------------------#
