@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-primary: "DM Serif Text", serif;
+    --font-secondary: "Roboto", sans-serif;
+
+    --color-tacte-primary-50: #dce3c3ff;
+    --color-tacte-primary-100: #c2caaaff;
+    --color-tacte-primary-200: #aab192ff;
+    --color-tacte-primary-300: #92997bff;
+    --color-tacte-primary-400: #7b8264ff;
+    --color-tacte-primary-500: #646b4eff;
+    --color-tacte-primary-600: #4f5539ff;
+    --color-tacte-primary-700: #3a4025ff;
+    --color-tacte-primary-800: #272c11ff;
+    --color-tacte-primary-900: #060701ff;
+}
+
+h1 {
+    font-family: var(--font-primary);
+}
+
+h2 {
+    font-family: var(--font-primary);
+}
+
+h3 {
+    font-family: var(--font-primary);
+}
+
+button {
+    font-family: var(--font-secondary);
+}
+
+button:focus-visible {
+    outline: none; /* elimina el borde por completo */
+}
+
+input:-webkit-autofill {
+    background-color: #fff !important; /* tu color */
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important; /* truco para sobreescribir */
+    -webkit-text-fill-color: #000 !important; /* color del texto */
+    transition: background-color 5000s ease-in-out 0s; /* hack para evitar parpadeos */
+}
+
+.rdp-root {
+    --rdp-accent-color: var(--color-tacte-primary-600);
+    --rdp-accent-background-color: red !important;
+    --rdp-today-color: var(--color-tacte-primary-500) !important;
+    width: fit-content;
+    padding: 20px 20px 12px 20px;
+}
+
+.rdp-day_button:disabled {
+    cursor: revert;
+    color: var(--color-tacte-primary-100) !important;
+}
+
+.rdp-caption_label {
+    color: var(--color-tacte-primary-700) !important;
+}
+
+.rdp-chevron {
+    fill: var(--color-tacte-primary-700) !important;
+}
+
+.rdp-day_button.selected {
+    color: var(--color-tacte-primary-50) !important;
+}
+
+.rdp-footer {
+    color: var(--color-tacte-primary-700) !important;
+}
+
+.rdp-weekday {
+    color: var(--color-tacte-primary-700) !important;
+}
+
+.my-booked-class {
+    background-color: tomato;
+    color: white;
+    border-radius: 50%;
+}
