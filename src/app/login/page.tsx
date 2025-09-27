@@ -32,7 +32,8 @@ export default function LoginPage() {
     clearError();
 
     await fetch("https://api.tactesalud.com/login", {
-      method: "GET",
+      method: "POST",
+      body: JSON.stringify(formData),
     })
       .then((r) => r.json())
       .then((d) => {
