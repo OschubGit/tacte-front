@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  async rewrites() {
+  /* async rewrites() {
     return [
       {
         source: "/api/:path*",
@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
         destination: "http://localhost:8888/tacte/public/web/:path*",
       },
     ];
-  },
+  }, */
 };
 
 export default nextConfig;
