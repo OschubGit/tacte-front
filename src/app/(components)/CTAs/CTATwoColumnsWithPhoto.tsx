@@ -1,72 +1,72 @@
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 
 const benefits = [
-    "Telf: 698903934",
-    "Email: alexmonzobarbera94@gmail.com",
-    "En el centro: Carlos tortosa juan 10, Monóvar (Alicante)",
-    "En redes: tacte_masajes_bienestar",
-    "Horario: De 8:00 de la mañana a 13:00 y de 16:00 a 21:00",
+  "Telf: 698903934",
+  "Email: alexmonzobarbera94@gmail.com",
+  "En el centro: Carlos tortosa juan 10, Monóvar (Alicante)",
+  "En redes: tacte_masajes_bienestar",
+  "Horario: De 8:00 de la mañana a 13:00 y de 16:00 a 21:00",
 ];
 
 export default function CTATwoColumnsWithPhoto() {
-    return (
-        <div className="overflow-hidden bg-tacte-primary-800 py-24 sm:py-32">
-            <div className="relative isolate">
-                <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-                    <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/[0.03] px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
-                        <img
-                            alt=""
-                            /* src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" */
-                            /* src="https://plus.unsplash.com/premium_photo-1673957923985-b814a9dbc03d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" */
-                            src="https://placehold.co/384x384"
-                            className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-                        />
-                        <div className="w-full flex-auto">
-                            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-                                ¡Contacta con nosotros!
-                            </h2>
-                            <p className="mt-6 text-lg/8 text-pretty text-white">
-                                Puedes ponerte en contacto con nosotros a través
-                                de estos medios o venir a vernos personalmente.
-                            </p>
-                            <ul
-                                role="list"
-                                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 text-gray-200 sm:grid-cols-2"
-                            >
-                                {benefits.map((benefit) => (
-                                    <li key={benefit} className="flex gap-x-3">
-                                        <CheckCircleIcon
-                                            aria-hidden="true"
-                                            className="h-7 w-5 flex-none text-gray-200"
-                                        />
-                                        {benefit}
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="mt-10 flex">
-                                <a
-                                    href="tel:698903934"
-                                    className="text-sm/6 font-semibold text-tacte-primary-100 hover:text-tacte-primary-300"
-                                >
-                                    ¡O bien llamanos ahora!
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    aria-hidden="true"
-                    className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
-                >
-                    <div
-                        style={{
-                            clipPath:
-                                "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
-                        }}
-                        className="aspect-1318/752 w-329.5 flex-none bg-linear-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+  return (
+    <div className="overflow-hidden bg-tacte-primary-800 py-24 sm:py-32">
+      <div className="relative isolate">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/[0.03] px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
+            <img
+              alt=""
+              /* src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80" */
+              /* src="https://plus.unsplash.com/premium_photo-1673957923985-b814a9dbc03d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" */
+              src="https://placehold.co/384x384"
+              className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
+            />
+            <div className="w-full flex-auto">
+              <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+                ¡Contacta con nosotros!
+              </h2>
+              <p className="mt-6 text-lg/8 text-pretty text-white">
+                Puedes ponerte en contacto con nosotros a través de estos medios
+                o venir a vernos personalmente.
+              </p>
+              <ul
+                role="list"
+                className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base/7 text-gray-200 sm:grid-cols-2"
+              >
+                {benefits.map((benefit) => (
+                  <li key={benefit} className="flex gap-x-3">
+                    <CheckCircleIcon
+                      aria-hidden="true"
+                      className="h-7 w-5 flex-none text-gray-200"
                     />
-                </div>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-10 flex">
+                <a
+                  href="tel:698903934"
+                  className="text-sm/6 font-semibold text-tacte-primary-100 hover:text-tacte-primary-300"
+                >
+                  ¡O bien llamanos ahora!
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    );
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-16 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
+        >
+          <div
+            style={{
+              clipPath:
+                "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
+            }}
+            className="aspect-1318/752 w-329.5 flex-none bg-linear-to-r from-[#80caff] to-[#4f46e5] opacity-20"
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
