@@ -1,8 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/hooks/useAuth";
+import Link from "next/link";
 
 export default function LoginPage() {
   const [formData, setFormData] = useState({
@@ -11,7 +12,8 @@ export default function LoginPage() {
   });
   const router = useRouter();
   const { login, isLoading, error, isAuthenticated, clearError } = useAuth();
-
+  const searchParams = useSearchParams();
+  const redirect = searchParams.get("redirect");
   // Redirigir si ya está autenticado
   useEffect(() => {
     if (isAuthenticated) {
@@ -35,7 +37,11 @@ export default function LoginPage() {
 
     if (success) {
       // Login exitoso - el usuario ya está logueado
-      router.push("/");
+      if (redirect) {
+        router.push(redirect);
+      } else {
+        router.push("/");
+      }
     }
   };
 
@@ -58,12 +64,12 @@ export default function LoginPage() {
               </h2>
               <p className="mt-2 text-sm/6 text-gray-500">
                 No estás registrado?{" "}
-                <a
-                  href="#"
+                <Link
+                  href="/register"
                   className="font-semibold text-tacte-primary-600 hover:text-tacte-primary-500"
                 >
                   Registrate aquí
-                </a>
+                </Link>
               </p>
             </div>
 
@@ -117,7 +123,7 @@ export default function LoginPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-center justify-between">
+                  {/* <div className="flex items-center justify-between">
                     <div className="text-sm/6">
                       <a
                         href="#"
@@ -126,7 +132,7 @@ export default function LoginPage() {
                         Olvidé mi contraseña
                       </a>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div>
                     <button
