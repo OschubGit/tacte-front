@@ -31,16 +31,12 @@ export default function LoginPage() {
     e.preventDefault();
     clearError();
 
-    await fetch("https://api.tactesalud.com/login", {
-      method: "POST",
-      body: JSON.stringify(formData),
-    })
-      .then((r) => r.json())
-      .then((d) => {
-        console.log(d);
-        router.push("/");
-      })
-      .catch((e) => console.error(e));
+    const success = await login(formData.email, formData.password);
+
+    if (success) {
+      // Login exitoso - el usuario ya está logueado
+      router.push("/");
+    }
   };
 
   return (
