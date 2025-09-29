@@ -14,10 +14,10 @@ const LandingBenefits = ({
     <div className="py-24 sm:py-32 bg-tacte-primary-700">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance dark:text-white">
+          <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty sm:text-5xl lg:text-balance text-white">
             Beneficios que irás cultivando
           </h2>
-          <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-300">
+          <p className="mt-6 text-lg/8 text-gray-300">
             Cada clase es un viaje hacia un estado de bienestar más profundo.
           </p>
         </div>
@@ -25,7 +25,7 @@ const LandingBenefits = ({
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {benefits.map((feature) => (
               <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base/7 font-semibold text-gray-900 dark:text-white">
+                <dt className="flex items-center gap-x-3 text-base/7 font-semibold text-white">
                   {/* <feature.icon
                                         aria-hidden="true"
                                         className="size-5 flex-none text-indigo-600 dark:text-indigo-400"
