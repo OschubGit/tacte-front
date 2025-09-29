@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   Dialog,
   DialogPanel,
@@ -23,6 +23,7 @@ import IconRegisterUser from "../icons/IconRegisterUser";
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 import IconCalendar from "../icons/IconCalendar";
+import iconHand from "../icons/iconHand";
 
 const products = [
   {
@@ -49,12 +50,12 @@ const products = [
     href: "/servicios/yoga",
     icon: IconYoga,
   },
-  /* {
+  {
     name: "Esteticien",
     description: "Siente bien y cuida tu cuerpo",
     href: "/servicios/esteticien",
     icon: iconHand,
-  }, */
+  },
   {
     name: "Nutrición",
     description: "La base de tu bienestar",
@@ -66,6 +67,7 @@ const products = [
 export default function HeaderWithFlyoutMenu() {
   const { isAuthenticated, logout } = useAuth();
   const pathname = usePathname();
+  const router = useRouter();
   const callsToAction = [
     {
       name: !isAuthenticated ? "Regístrate" : "Reservas",
@@ -81,6 +83,10 @@ export default function HeaderWithFlyoutMenu() {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  const handleLogout = () => {
+    logout();
+    router.push("/login");
+  };
   return (
     <header className="bg-white z-100">
       <nav
@@ -279,12 +285,12 @@ export default function HeaderWithFlyoutMenu() {
               </div>
               <div className="py-6">
                 {isAuthenticated ? (
-                  <Link
-                    href="/login"
+                  <span
+                    onClick={handleLogout}
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 cursor-pointer"
                   >
                     Cerrar sesión
-                  </Link>
+                  </span>
                 ) : (
                   <Link
                     href="/login"

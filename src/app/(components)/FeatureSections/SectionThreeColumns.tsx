@@ -5,6 +5,7 @@ import IconPsicology from "../icons/IconPsicology";
 import IconYoga from "../icons/IconYoga";
 import IconMassage from "../icons/IconMassage";
 import Link from "next/link";
+import iconHand from "../icons/iconHand";
 
 const features = [
   {
@@ -42,13 +43,13 @@ const features = [
     href: "/servicios/fisioterapia-pilates",
     icon: IconYoga,
   },
-  /* {
-        name: "Estética",
-        description:
-            "La misión es cuidar tu parte mas externa de tu cuerpo. El cuerpo hay que tratarlo bien con masajes y mimarlo con los mejores tratamientos.",
-        href: "/servicios/estetica",
-        icon: iconHand,
-    }, */
+  {
+    name: "Estética",
+    description:
+      "La misión es cuidar tu parte mas externa de tu cuerpo. El cuerpo hay que tratarlo bien con masajes y mimarlo con los mejores tratamientos.",
+    href: "/servicios/esteticien",
+    icon: iconHand,
+  },
 ];
 
 export default function SectionThreeColumns() {
