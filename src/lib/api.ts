@@ -45,16 +45,13 @@ export const api = {
         }),
       });
 
-      console.log("Response status:", response.status);
-      console.log("Response headers:", response.headers);
-
-      if (!response.ok) {
+      /* if (!response.ok) {
         const errorText = await response.text();
         console.error("Error response:", errorText);
         throw new Error(
           `HTTP error! status: ${response.status} - ${errorText}`
         );
-      }
+      } */
 
       return response.json();
     } catch (error) {
@@ -148,6 +145,21 @@ export const api = {
       `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.CANCEL_RESERVATION}?user_id=${userId}&session_id=${sessionId}&type=${type}`,
       {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }
+    );
+
+    return response.json();
+  },
+
+  publicSessions: async () => {
+    const response = await fetch(
+      `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.PUBLIC_SESSIONS}`,
+      {
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",

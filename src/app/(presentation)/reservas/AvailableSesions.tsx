@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Sessions } from "@/lib/types";
 import { hasMoreThanHalf } from "@/lib/functions";
 import { CalendarIcon } from "@heroicons/react/24/outline";
 import IconList from "@/app/(components)/icons/IconList";
 import { useAuthStore } from "@/stores/authStore";
-import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 const AvailableSesions = ({
   availableSessions,
@@ -16,14 +16,12 @@ const AvailableSesions = ({
   setSession: (session: Sessions) => void;
 }) => {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
-
-  const [openModalAuth, setOpenModalAuth] = useState(false);
-
+  const router = useRouter();
   return (
     <>
       {availableSessions.length > 0 && (
         <>
-          <div className="mb-4 mt-8 flex items-center gap-x-2 justify-start text-tacte-primary-700 p-8 bg-gray-50 rounded-lg">
+          <div className="mb-4 flex items-center gap-x-2 justify-start text-tacte-primary-700 p-8 bg-[#ebefdd8c] rounded-lg">
             <IconList className="size-6 text-tacte-primary-700" />
             <h2 className="text-2xl font-semibold text-gray-900">
               Sesiones disponibles
@@ -98,9 +96,7 @@ const AvailableSesions = ({
                       disabled={s.status === "full"}
                       onClick={() => {
                         if (!isAuthenticated) {
-                          toast.info(
-                            "Debes estar registrado para reservar una sesión"
-                          );
+                          router.push("/login?redirect=/reservas");
                         } else {
                           setOpenDrawer(true);
                           setSession(s);

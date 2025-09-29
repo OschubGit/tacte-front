@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import {
   Dialog,
   DialogPanel,
@@ -18,7 +19,6 @@ import IconYoga from "../icons/IconYoga";
 import IconPsicology from "../icons/IconPsicology";
 import IconMassage from "../icons/IconMassage";
 import IconNutrition from "../icons/IconNutrition";
-import iconHand from "../icons/iconHand";
 import IconRegisterUser from "../icons/IconRegisterUser";
 import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
@@ -65,6 +65,7 @@ const products = [
 
 export default function HeaderWithFlyoutMenu() {
   const { isAuthenticated, logout } = useAuth();
+  const pathname = usePathname();
   const callsToAction = [
     {
       name: !isAuthenticated ? "Regístrate" : "Reservas",
@@ -74,6 +75,12 @@ export default function HeaderWithFlyoutMenu() {
     { name: "Reserva", href: "tel:698903934", icon: PhoneIcon },
   ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Cerrar el menú móvil cuando cambie la URL
+  useEffect(() => {
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
   return (
     <header className="bg-white z-100">
       <nav
@@ -168,7 +175,7 @@ export default function HeaderWithFlyoutMenu() {
             Profesionales
           </Link>
           <Link
-            href={isAuthenticated ? "/reservas" : "/login?redirect=/reservas"}
+            href={"/reservas"}
             className="text-sm/6 font-semibold text-gray-900"
           >
             Reservas
@@ -231,7 +238,7 @@ export default function HeaderWithFlyoutMenu() {
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Product
+                    Servicios
                     <ChevronDownIcon
                       aria-hidden="true"
                       className="size-5 flex-none group-data-open:rotate-180"
@@ -239,14 +246,13 @@ export default function HeaderWithFlyoutMenu() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
                     {[...products, ...callsToAction].map((item) => (
-                      <DisclosureButton
+                      <Link
                         key={item.name}
-                        as="a"
                         href={item.href}
                         className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
-                      </DisclosureButton>
+                      </Link>
                     ))}
                   </DisclosurePanel>
                 </Disclosure>

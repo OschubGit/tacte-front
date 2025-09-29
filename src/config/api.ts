@@ -9,5 +9,6 @@ export const API_CONFIG = {
     SESSIONS: "/sessions",
     RESERVE_SESSION: "/reserve-session",
     CANCEL_RESERVATION: "/cancel-reservation",
+    PUBLIC_SESSIONS: "/sessions-public",
   },
 };
