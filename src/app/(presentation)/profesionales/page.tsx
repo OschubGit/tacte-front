@@ -4,7 +4,7 @@ const people = [
   {
     name: "Alex Monzó",
     role: "Osteopatía y Quiromasaje",
-    imageUrl: "https://placehold.co/208x260",
+    imageUrl: "/profesionals/alex.webp",
     bio: "Mi propósito es acompañarte a recuperar tu bienestar a través de un enfoque global y adaptado a ti. En cada sesión trabajamos juntos para entender lo que tu cuerpo necesita, liberar tensiones y avanzar en tu proceso de sanación",
     link: "/profesionales/alex-monzo",
     description:
@@ -13,7 +13,7 @@ const people = [
   {
     name: "Alexandra Poveda",
     role: "Danza y Yoga",
-    imageUrl: "https://placehold.co/208x260",
+    imageUrl: "/profesionals/alexandra.webp",
     bio: "Soy graduada en Pedagogía de la Danza y he integrado el yoga en mi camino como una práctica de conexión cuerpo-mente. Mi objetivo es crear un espacio donde cada persona pueda habitar su cuerpo, cultivar calma y transformar su relación consigo misma.",
     link: "/profesionales/alexandra-poveda",
     description:
@@ -22,7 +22,7 @@ const people = [
   {
     name: "Vera Dominguez",
     role: "Fisioterapia y Pilates",
-    imageUrl: "https://placehold.co/208x260",
+    imageUrl: "/profesionals/vera.webp",
     bio: "Soy fisioterapeuta graduada por la UMH, con más de 10 años de experiencia y especialización en suelo pélvico, embarazo y posparto. Complemento mi práctica con acupuntura, aromaterapia y ejercicio terapéutico. Mi misión es escuchar, comprender y acompañar a cada paciente en su proceso.",
     link: "/profesionales/vera-dominguez",
     description:
@@ -31,7 +31,7 @@ const people = [
   {
     name: "Laura Amorós",
     role: "Psicología y Acompañamiento Emocional",
-    imageUrl: "https://placehold.co/208x260",
+    imageUrl: "/profesionals/laura.webp",
     bio: "Soy psicóloga graduada por la Universitat Oberta de Cataluña, con especialización en depresión posparto y terapias de tercera generación. Mi enfoque integra aceptación, autocompasión y regulación emocional para acompañar a niños, adolescentes y adultos en sus procesos vitales.",
     link: "/profesionales/laura-amoros",
     description:
@@ -40,7 +40,7 @@ const people = [
   {
     name: "Raquel Polo",
     role: "Nutricionista",
-    imageUrl: "https://placehold.co/208x260",
+    imageUrl: "/profesionals/raquel.webp",
     bio: "Soy dietista-nutricionista graduada por la Universidad de Alicante, con especialización en nutrición deportiva y trastornos de la conducta alimentaria. Mi enfoque se basa en crear hábitos saludables y sostenibles, adaptados a tu estilo de vida y objetivos personales.",
     link: "/profesionales/raquel-polo",
     description:
@@ -49,7 +49,7 @@ const people = [
   {
     name: "Isabel Barberá",
     role: "Estética y Belleza",
-    imageUrl: "https://placehold.co/208x260",
+    imageUrl: "/profesionals/isabel.webp",
     bio: "Como experta en estética y bienestar, combino técnicas avanzadas y tradicionales para ofrecer tratamientos faciales y corporales personalizados. Me dedico a potenciar tu belleza natural y bienestar integral, acompañándote con profesionalidad y cercanía en tu camino hacia el equilibrio físico y mental.",
     link: "/profesionales/isabel-barbera",
     description:
@@ -109,11 +109,11 @@ export default function TeamPage() {
             {/* <Link href={person.link} key={person.name}> */}
             {people.map((person) => (
               <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
-                {/* <img
-                                alt="profesional"
-                                src={person.imageUrl}
-                                className="aspect-4/5 w-52 flex-none rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5"
-                            /> */}
+                <img
+                  alt="profesional"
+                  src={person.imageUrl}
+                  className="aspect-4/5 w-52 flex-none rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5"
+                />
                 <div className="flex-auto">
                   <h3 className="text-lg/8 font-semibold tracking-tight text-gray-900">
                     {person.name}
