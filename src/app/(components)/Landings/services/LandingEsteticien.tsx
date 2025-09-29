@@ -19,7 +19,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
     title: "Descubre el arte de la estética y el bienestar",
     description:
       "Bienvenidos al universo de la belleza, donde cada tratamiento es una experiencia única. Tratamientos faciales, corporales, masajes y rituales holísticos diseñados para cuidar tu piel, tu cuerpo y tu mente.",
-    backgroundImage: "/images/hero-bg.jpg",
+    backgroundImage: "/services/hero_estetica.webp",
     ctaPrimary: {
       text: "Reserva tu cita",
       href: "/reserva",
@@ -68,6 +68,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
       alt: "Tratamientos de estética profesional",
     },
     showIcons: false,
+    imagesVert: ["/services/estetica-vert-5.webp"],
   };
 
   // Benefits props
@@ -122,6 +123,12 @@ const LandingEsteticien = ({ service }: { service: string }) => {
         subtitle="Sobre mi"
         title="Isabel Barberá"
         content="Soy una profesional apasionada por la estética y el bienestar, con experiencia en tratamientos faciales, corporales y terapias holísticas. Mi enfoque se basa en crear protocolos personalizados que unen tecnología avanzada y técnicas tradicionales, logrando resultados visibles y una experiencia de cuidado integral. Mi misión es ayudarte a resaltar tu belleza natural y a recuperar el equilibrio entre cuerpo y mente, siempre con un trato cercano y profesional."
+        imagesVert={[
+          "/services/estetica-vert-1.webp",
+          "/services/estetica-vert-2.webp",
+          "/services/estetica-vert-3.webp",
+          "/services/estetica-vert-4.webp",
+        ]}
       />
       <LandingFeatureSection {...landingFeatures} />
       <LandingBenefits benefits={benefits} />

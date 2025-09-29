@@ -4,8 +4,6 @@ import LandingFeatureSection from "../LandingFeatureSection";
 import SimpleCarrousel from "../../Carrousel/SimpleCarrousel";
 import LandingBenefits from "../LandingBenefits";
 import CTACenteredWithGradient from "../../CTAs/CTACenteredWithGradient";
-import FooterSimpleCentered from "../../Footers/FooterSimpleCentered";
-import LandingAboutMeSticky from "../LandingAboutMeSticky";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
 
@@ -108,23 +106,30 @@ const LandingNutricion = ({ service }: { service: string }) => {
           text: "Reservar cita",
           href: "/reservas",
         }}
+        backgroundImage="/services/hero_nutricion.webp"
       />
       <LandingAboutMe
         subtitle="Sobre mi"
         title="Raquel Polo"
         content="Graduada en Nutrición Humana y Dietética por la Universidad de Alicante, me apasiona acompañar a las personas en la mejora de su alimentación desde un enfoque no restrictivo y basado en evidencia científica. Mi especialización en nutrición deportiva y salud digestiva me permite ayudarte a alcanzar tus objetivos con un plan realista y sostenible. Para mí, comer no es prohibirse, sino ganar salud, energía y equilibrio."
+        imagesVert={[
+          "/services/nutricion_vert-1.webp",
+          "/services/nutricion_vert-2.webp",
+          "/services/nutricion_vert-3.webp",
+          "/services/nutricion_vert-4.webp",
+        ]}
       />
       <LandingFeatureSection
         features={features}
         title="Un plan nutricional adaptado a ti"
         subtitle="Conseguirás"
         description="Cada persona es diferente, por eso diseño estrategias nutricionales personalizadas que se adaptan a tus objetivos y estilo de vida."
+        imagesVert={["/services/nutricion_vert-5.webp"]}
       />
       <LandingBenefits benefits={benefits} />
       <SimpleCarrousel />
       <CTACenteredWithGradient />
       <LandingFaqs faqs={faqs} />
-      <FooterSimpleCentered darkMode={false} />
     </>
   );
 };

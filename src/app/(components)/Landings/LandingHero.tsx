@@ -71,12 +71,11 @@ export default function LandingHero({
 
   return (
     <div className="bg-gray-900">
-      <div className="relative isolate overflow-hidden pt-14">
+      <div className="relative isolate overflow-hidden pt-14 backdrop-grayscale">
         <img
           alt=""
-          /* src={backgroundImage} */
-          src="https://placehold.co/1530x928/0f0f0d/0f0f0d"
-          className="absolute inset-0 -z-10 size-full object-cover filter blur-xs"
+          src={backgroundImage}
+          className="absolute inset-0 -z-10 size-full object-cover filter blur-xs grayscale-[0.7]"
         />
         <div
           aria-hidden="true"

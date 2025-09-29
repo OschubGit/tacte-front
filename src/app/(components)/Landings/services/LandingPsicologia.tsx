@@ -86,23 +86,24 @@ const LandingPsicologia = ({ service }: { service: string }) => {
           text: "Reservar cita",
           href: "/reservas",
         }}
+        backgroundImage="/services/hero_psicologia.webp"
       />
       <LandingAboutMe
         subtitle="Sobre mi"
         title="Laura Amorós"
         content="Soy graduada en Psicología por la Universitat Oberta de Cataluña y me he formado en terapias de tercera generación, un enfoque que combina aceptación, autocompasión y regulación emocional. Cuento con especialización en depresión posparto y una trayectoria acompañando a niños, adolescentes y adultos en diferentes etapas de la vida. Mi misión es crear un espacio seguro, cercano y libre de juicios donde puedas ser escuchado, comprendido y acompañado en tu proceso de crecimiento personal y bienestar emocional."
+        imagesVert={[
+          "/services/psicologia-vert-1.webp",
+          "/services/psicologia-vert-2.webp",
+          "/services/psicologia-vert-3.webp",
+          "/services/psicologia-vert-4.webp",
+        ]}
       />
-      {/* <LandingAboutMeSticky
-                subtitle="Sobre mi"
-                title="Laura Amorós"
-                content="Soy graduada en Psicología por la Universitat Oberta de Cataluña y me he formado en terapias de tercera generación, un enfoque que combina aceptación, autocompasión y regulación emocional. Cuento con especialización en depresión posparto y una trayectoria acompañando a niños, adolescentes y adultos en diferentes etapas de la vida. Mi misión es crear un espacio seguro, cercano y libre de juicios donde puedas ser escuchado, comprendido y acompañado en tu proceso de crecimiento personal y bienestar emocional."
-                imageSrc="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                imageAlt="Psicóloga ofreciendo acompañamiento emocional"
-            /> */}
       <LandingFeatureSection
         title="Acompañamiento adaptado a cada etapa de la vida"
         description="Cada persona vive y siente de manera única. Por eso adapto el proceso terapéutico a tus necesidades y momento vital, ofreciendo un espacio cercano y práctico."
         features={features}
+        imagesVert={["/services/psicologia-vert-5.webp"]}
       />
       <LandingBenefits benefits={benefits} />
       <SimpleCarrousel />

@@ -96,6 +96,12 @@ const LandingYoga = ({ service }: { service: string }) => {
         subtitle="Sobre mi"
         title="Alexandra Poveda"
         content="El movimiento siempre ha sido mi manera de comprender el mundo. Desde muy pequeña descubrí que a través del cuerpo podía expresarme, explorar mis emociones y darle sentido a lo que me rodeaba. A los tres años empecé a bailar y, desde entonces, mi cuerpo se convirtió en un lugar sagrado de aprendizaje, un espacio donde descubrí que cada gesto y cada respiración tienen un significado profundo."
+        imagesVert={[
+          "/services/yoga-vert-1.webp",
+          "/services/yoga-vert-2.webp",
+          "/services/yoga-vert-3.webp",
+          "/services/yoga-vert-4.webp",
+        ]}
       />
       {/*  <LandingAboutMeSticky
                 subtitle="Sobre mi"
@@ -104,7 +110,10 @@ const LandingYoga = ({ service }: { service: string }) => {
                 imageSrc="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 imageAlt=""
             /> */}
-      <LandingFeatureSection features={features} />
+      <LandingFeatureSection
+        features={features}
+        imagesVert={["/services/yoga-vert-5.webp"]}
+      />
       <LandingBenefits benefits={benefits} />
       <SimpleCarrousel />
       <CTACenteredWithGradient />

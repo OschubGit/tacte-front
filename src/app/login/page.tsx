@@ -153,7 +153,7 @@ function LoginForm() {
         <div className="relative hidden w-0 flex-1 lg:block">
           <img
             alt=""
-            src="https://placehold.co/487x755/000000/fdfdfd"
+            src={"/tacte_login.png"}
             className="absolute inset-0 size-full object-cover"
           />
         </div>
