@@ -35,7 +35,7 @@ const navigation = {
         }, */
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/tacte_salud/",
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
