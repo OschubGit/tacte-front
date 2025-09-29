@@ -44,7 +44,7 @@ const people = [
     bio: "Quis bibendum velit diam tellus sed ut. Faucibus posuere enim, vitae enim eget neque tortor. Metus lectus mattis id id. Tellus ornare etiam id velit ut enim lacinia congue ultrices. Sit morbi vel elit a maecenas mauris elit lectus magna.",
     link: "/profesionales/raquel-polo",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+      "Soy dietista-nutricionista graduada por la Universidad de Alicante, con especialización en nutrición deportiva y trastornos de la conducta alimentaria. Mi enfoque se basa en crear hábitos saludables y sostenibles, adaptados a tu estilo de vida y objetivos personales.",
   },
 ];
 
