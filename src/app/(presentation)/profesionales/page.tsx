@@ -4,7 +4,7 @@ const people = [
   {
     name: "Alex Monzó",
     role: "Osteopatía y Quiromasaje",
-    imageUrl: "/profesionals/alex.webp",
+    imageUrl: "/services/masage-vert-5.webp",
     bio: "Mi propósito es acompañarte a recuperar tu bienestar a través de un enfoque global y adaptado a ti. En cada sesión trabajamos juntos para entender lo que tu cuerpo necesita, liberar tensiones y avanzar en tu proceso de sanación",
     link: "/profesionales/alex-monzo",
     description:
@@ -49,7 +49,7 @@ const people = [
   {
     name: "Isabel Barberá",
     role: "Estética y Belleza",
-    imageUrl: "/profesionals/isabel.webp",
+    imageUrl: "/services/estetica-vert-5.webp",
     bio: "Como experta en estética y bienestar, combino técnicas avanzadas y tradicionales para ofrecer tratamientos faciales y corporales personalizados. Me dedico a potenciar tu belleza natural y bienestar integral, acompañándote con profesionalidad y cercanía en tu camino hacia el equilibrio físico y mental.",
     link: "/profesionales/isabel-barbera",
     description:
