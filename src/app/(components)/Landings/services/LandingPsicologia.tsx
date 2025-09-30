@@ -86,7 +86,7 @@ const LandingPsicologia = ({ service }: { service: string }) => {
           text: "Reservar cita",
           href: "/reservas",
         }}
-        backgroundImage="/services/hero_psicologia.webp"
+        backgroundImage="/images/hero_psicologia.jpg"
       />
       <LandingAboutMe
         subtitle="Sobre mi"

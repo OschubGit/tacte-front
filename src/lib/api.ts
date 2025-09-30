@@ -155,9 +155,21 @@ export const api = {
     return response.json();
   },
 
-  publicSessions: async () => {
+  publicSessions: async ({
+    datefrom,
+    dateto,
+  }: {
+    datefrom?: string;
+    dateto?: string;
+  }) => {
+    const queryParams = new URLSearchParams();
+    if (datefrom) queryParams.append("datefrom", datefrom);
+    if (dateto) queryParams.append("dateto", dateto);
+
     const response = await fetch(
-      `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.PUBLIC_SESSIONS}`,
+      `${API_CONFIG.BASE_URL}${
+        API_CONFIG.ENDPOINTS.PUBLIC_SESSIONS
+      }?${queryParams.toString()}`,
       {
         method: "GET",
         headers: {

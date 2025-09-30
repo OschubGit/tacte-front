@@ -125,11 +125,7 @@ export default function LandingHero({
                 ) : (
                   <>
                     <a
-                      href={
-                        isAuthenticated
-                          ? "/reservas"
-                          : "/login?redirect=/reservas"
-                      }
+                      href={"/reservas"}
                       className="rounded-md bg-tacte-primary-50 px-3.5 py-2.5 text-sm font-semibold text-tacte-primary-800 shadow-xs hover:bg-tacte-primary-100 hover:text-tacte-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tacte-primary-500"
                     >
                       {ctaPrimary.text}

@@ -20,11 +20,7 @@ export default function CTACenteredWithGradient() {
             mente necesitan: empieza hoy a cuidarte como mereces.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <GlassButton
-              href={isAuthenticated ? "/reservas" : "/login?redirect=/reservas"}
-            >
-              Reserva tu cita
-            </GlassButton>
+            <GlassButton href={"/reservas"}>Reserva tu cita</GlassButton>
             <Link
               href="/contacto"
               className="text-sm/6 font-semibold text-white hover:text-gray-300"

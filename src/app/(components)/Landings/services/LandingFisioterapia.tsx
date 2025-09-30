@@ -92,7 +92,7 @@ const LandingFisioterapia = ({ service }: { service: string }) => {
       <LandingHero
         title="Recupera tu bienestar desde un enfoque integral"
         description="Fisioterapia, ejercicio terapéutico y técnicas complementarias para aliviar el dolor, reconectar con tu cuerpo y recuperar la calidad de vida."
-        backgroundImage="/services/hero_yoga.webp"
+        backgroundImage="/images/hero_yoga.jpg"
       />
       <LandingAboutMe
         subtitle="Sobre mi"

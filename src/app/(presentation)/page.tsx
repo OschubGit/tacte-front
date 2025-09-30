@@ -13,7 +13,7 @@ const HomePage = () => {
       <HeroWithAngleImage
         title="Bienestar integral en un solo lugar"
         description="Tacte es un centro de masajes y bienestar con profesionales apasionados por ayudarte a mejorar tu salud física, mental y emocional."
-        image="./services/hero_home.webp"
+        image="./images/hero_home.webp"
         logo="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
       />
       <SectionThreeColumns />

@@ -48,12 +48,6 @@ export default function SectionWithScreenShoot() {
               <h2 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                 Estamos aquí para ti, para mejorar juntos
               </h2>
-              {/* <p className="mt-6 text-lg/8 text-gray-700">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Maiores impedit perferendis
-                                suscipit eaque, iste dolor cupiditate blanditiis
-                                ratione.
-                            </p> */}
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-9">
@@ -70,9 +64,7 @@ export default function SectionWithScreenShoot() {
 
           <img
             alt="Product screenshot"
-            /* src="https://tailwindcss.com/plus-assets/img/component-images/project-app-screenshot.png" */
-            src="https://images.unsplash.com/photo-1630835474626-b4de96a25186?q=80&w=1902&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            /* src="https://placehold.co/912x556" */
+            src="./images/feature_section.webp"
             width={2432}
             height={1442}
             className="w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228 md:-ml-4 lg:-ml-0"

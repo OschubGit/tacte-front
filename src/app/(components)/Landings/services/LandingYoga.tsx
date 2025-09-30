@@ -91,6 +91,7 @@ const LandingYoga = ({ service }: { service: string }) => {
         title="Encuentra equilibrio a través del yoga"
         description="Conecta con tu cuerpo. Calma tu mente. Respira presente."
         type="yoga"
+        backgroundImage="/images/hero_yoga.jpg"
       />
       <LandingAboutMe
         subtitle="Sobre mi"

@@ -49,7 +49,7 @@ const people = [
   {
     name: "Isabel Barberá",
     role: "Estética y Belleza",
-    imageUrl: "/services/estetica-vert-5.webp",
+    imageUrl: "/profesionals/isabel_barbera.jpg",
     bio: "Como experta en estética y bienestar, combino técnicas avanzadas y tradicionales para ofrecer tratamientos faciales y corporales personalizados. Me dedico a potenciar tu belleza natural y bienestar integral, acompañándote con profesionalidad y cercanía en tu camino hacia el equilibrio físico y mental.",
     link: "/profesionales/isabel-barbera",
     description:
@@ -63,7 +63,7 @@ export default function TeamPage() {
       <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
         <img
           alt=""
-          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=screen"
+          src="/images/hero_team.webp"
           className="absolute inset-0 -z-10 size-full object-cover opacity-10"
         />
         <div

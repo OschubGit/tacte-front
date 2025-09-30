@@ -24,6 +24,7 @@ import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 import IconCalendar from "../icons/IconCalendar";
 import iconHand from "../icons/iconHand";
+import IconPilates from "../icons/IconPilates";
 
 const products = [
   {
@@ -42,7 +43,7 @@ const products = [
     name: "Fisioterapia y Pilates",
     description: "Para mejorar tu bienestar físico",
     href: "/servicios/fisioterapia-pilates",
-    icon: IconYoga,
+    icon: IconPilates,
   },
   {
     name: "Yoga",
@@ -217,7 +218,7 @@ export default function HeaderWithFlyoutMenu() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 bg-tacte-primary-50">
           <div className="flex items-center justify-between">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Tacte</span>
@@ -243,7 +244,7 @@ export default function HeaderWithFlyoutMenu() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 bg-tacte-primary-100">
                     Servicios
                     <ChevronDownIcon
                       aria-hidden="true"
@@ -251,21 +252,30 @@ export default function HeaderWithFlyoutMenu() {
                     />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
-                      <Link
+                    {[...products].map((item) => (
+                      <div
                         key={item.name}
-                        href={item.href}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
+                        className="flex items-center gap-x-2 pl-6"
                       >
-                        {item.name}
-                      </Link>
+                        {item.icon && (
+                          <item.icon
+                            color="#3a4025ff"
+                            aria-hidden="true"
+                            /* className="size-6" */
+                          />
+                        )}
+                        <Link
+                          href={item.href}
+                          className="block rounded-lg py-2 pr-3 pl-3 text-sm/7 font-semibold text-tacte-primary-900 hover:bg-tacte-primary-700"
+                        >
+                          {item.name}
+                        </Link>
+                      </div>
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
                 <Link
-                  href={
-                    isAuthenticated ? "/reservas" : "/login?redirect=/reservas"
-                  }
+                  href={"/reservas"}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Reservas

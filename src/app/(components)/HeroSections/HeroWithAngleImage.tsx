@@ -30,13 +30,7 @@ export default function HeroWithAngleImage({
                   {description}
                 </p>
                 <div className="mt-10 flex items-center gap-x-6 font-secondary">
-                  <PrimaryButton
-                    href={
-                      isAuthenticated
-                        ? "/reservas"
-                        : "/login?redirect=/reservas"
-                    }
-                  >
+                  <PrimaryButton href={"/reservas"}>
                     Reserva tu cita
                   </PrimaryButton>
                   {/* <PrimaryButtonLink href="#">

@@ -122,7 +122,7 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
       <LandingHero
         title="Recupera tu cuerpo con Osteopatía"
         description="Terapia manual integral para aliviar dolores, mejorar tu movilidad y ayudarte a reconectar con tu bienestar natural."
-        backgroundImage="/services/hero_massage.webp"
+        backgroundImage="/images/hero_osteopatia.jpg"
         ctaPrimary={{
           text: "Reservar cita",
           href: "tel:666666666",

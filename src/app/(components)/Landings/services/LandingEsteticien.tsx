@@ -118,7 +118,10 @@ const LandingEsteticien = ({ service }: { service: string }) => {
   ];
   return (
     <>
-      <LandingHero {...landingHero} />
+      <LandingHero
+        {...landingHero}
+        backgroundImage="/images/hero_estetica.jpg"
+      />
       <LandingAboutMe
         subtitle="Sobre mi"
         title="Isabel Barberá"

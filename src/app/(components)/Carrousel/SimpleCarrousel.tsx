@@ -6,43 +6,43 @@ const SimpleCarrousel = () => {
       <div className="carousel carousel-center bg-tacte-primary-600 space-x-4 p-4 w-full">
         <div className="carousel-item">
           <img
-            src="https://plus.unsplash.com/premium_photo-1663047487227-0f3cd88ed8aa?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/slider/slider_1.png"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/slider/slider_2.jpg"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://images.unsplash.com/photo-1718862403436-616232ec6005?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/slider/slider_3.png"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://images.unsplash.com/photo-1683056255281-e52a141924f0?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/slider/slider_4.png"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://images.unsplash.com/photo-1697274834392-04ff3b76ef20?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/slider/slider_5.png"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://images.unsplash.com/photo-1696299337937-453aed8b93af?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/slider/slider_6.png"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>
         <div className="carousel-item">
           <img
-            src="https://plus.unsplash.com/premium_photo-1666283137412-52f342dbdc2b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="/images/slider/slider_7.jpg"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>

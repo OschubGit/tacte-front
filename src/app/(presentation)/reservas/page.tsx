@@ -24,7 +24,10 @@ export default function ReservasPage() {
   const [activeTab, setActiveTab] = useState<string>(TabNames.ALL);
 
   const fetchPublicSessions = async (): Promise<void> => {
-    const sessions = await api.publicSessions();
+    const sessions = await api.publicSessions({
+      datefrom: selected?.toISOString().split("T")[0],
+      dateto: selected?.toISOString().split("T")[0],
+    });
     setSessions(sessions.sessions);
   };
 
