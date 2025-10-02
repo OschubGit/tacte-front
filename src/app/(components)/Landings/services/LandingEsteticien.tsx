@@ -103,7 +103,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
     {
       question: "¿Qué marcas cosméticas utilizáis?",
       answer:
-        "Trabajamos con firmas de prestigio como Skeyndor, Bocaré, Hatis, Bruno Vassari y Belnatur, garantizando calidad y eficacia.",
+        "Trabajamos con firmas de prestigio como Skeyndor, Bocaré, Matis, Bruno Vassari y Belnatur, garantizando calidad y eficacia.",
     },
     {
       question: "¿Puedo regalar un tratamiento?",
