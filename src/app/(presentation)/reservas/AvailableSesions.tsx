@@ -37,7 +37,7 @@ const AvailableSesions = ({
                   <span className="text-gray-500">/</span>
                 </h2>
                 {s.status === "full" ? (
-                  <div className="w-fit rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 inset-ring inset-ring-gray-500/10">
+                  <div className="w-fit rounded-full bg-red-50 px-2 py-1 text-xs font-medium text-red-700 inset-ring inset-ring-red-700/30">
                     Sin plazas
                   </div>
                 ) : null}

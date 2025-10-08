@@ -75,10 +75,12 @@ const AuthenticatedSessions = ({
       );
     })()
   ) : (
-    <div className="flex justify-center items-center h-full">
-      <p className="text-tacte-primary-600 text-lg">
-        No hay sesiones disponibles.
-      </p>
+    <div className="rounded-md bg-blue-50 p-4 mt-10">
+      <div className="flex">
+        <div className="ml-3 flex-1 md:flex md:justify-between">
+          <p className="text-sm text-blue-700">No hay sesiones disponibles.</p>
+        </div>
+      </div>
     </div>
   );
 };

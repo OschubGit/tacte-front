@@ -94,7 +94,7 @@ export const api = {
     dateto,
     user_id,
   }: {
-    type?: string;
+    type?: string | null;
     datefrom?: string;
     dateto?: string;
     user_id?: string;

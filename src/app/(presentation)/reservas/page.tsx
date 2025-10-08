@@ -11,7 +11,7 @@ import AvailableSesions from "./AvailableSesions";
 import AuthenticatedSessions from "./AuthenticatedSessions";
 import Link from "next/link";
 import { TabNames } from "@/lib/enums";
-import SvgCercleDegradation from "@/app/(components)/SVGDecoration/SvgCercleDegradation";
+import ComboboxSelect from "@/app/(components)/ComboBox/Combobox";
 
 export default function ReservasPage() {
   const defaultClassNames = getDefaultClassNames();
@@ -31,8 +31,9 @@ export default function ReservasPage() {
     setSessions(sessions.sessions);
   };
 
-  const fetchSessions = async (): Promise<void> => {
+  const fetchSessions = async (type?: string): Promise<void> => {
     const sessions = await api.getSessions({
+      type: type ?? null,
       datefrom: selected?.toISOString().split("T")[0],
       dateto: selected?.toISOString().split("T")[0],
       user_id: user?.id ? String(user.id) : undefined,
@@ -47,6 +48,10 @@ export default function ReservasPage() {
       fetchSessions();
     }
   }, [isAuthenticated, selected]);
+
+  const selectService = (service: string) => {
+    fetchSessions(service);
+  };
 
   return (
     <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
@@ -123,13 +128,16 @@ export default function ReservasPage() {
         />
         <ol className="mt-4 divide-y divide-gray-100 text-sm/6 lg:col-span-7 xl:col-span-8 w-full">
           {isAuthenticated ? (
-            <AuthenticatedSessions
-              sessions={sessions}
-              setOpenDrawer={setOpenDrawer}
-              setSession={setSession}
-              activeTab={activeTab}
-              setActiveTab={setActiveTab}
-            />
+            <>
+              <ComboboxSelect onSelect={selectService} />
+              <AuthenticatedSessions
+                sessions={sessions}
+                setOpenDrawer={setOpenDrawer}
+                setSession={setSession}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+              />
+            </>
           ) : (
             <AvailableSesions
               availableSessions={sessions}
