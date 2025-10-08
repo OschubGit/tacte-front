@@ -12,16 +12,16 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { useState } from "react";
 
 const services = [
-  {
+  /*  {
     id: 1,
     name: "Quiromasaje y Osteopatía",
     value: "osteopathy",
-  },
+  }, */
   { id: 2, name: "Yoga", value: "yoga" },
   { id: 3, name: "Fisioterapia y Pilates", value: "pilates" },
   { id: 4, name: "Nutrición", value: "nutrition" },
-  { id: 5, name: "Estética", value: "aesthetics" },
-  { id: 6, name: "Psicología", value: "psychology" },
+  /* { id: 5, name: "Estética", value: "aesthetics" }, */
+  /* { id: 6, name: "Psicología", value: "psychology" }, */
 ];
 
 export default function ComboboxSelect({
