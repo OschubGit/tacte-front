@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useAuth } from "@/hooks/useAuth";
+import { Services } from "@/lib/enums";
 
 interface NavigationItem {
   name: string;
@@ -115,7 +116,9 @@ export default function LandingHero({
                 {description}
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                {type !== "yoga" ? (
+                {type !== Services.YOGA &&
+                type !== Services.NUTRITION &&
+                type !== Services.PILATES ? (
                   <a
                     href={"tel:+34698903934"}
                     className="rounded-md bg-tacte-primary-50 px-3.5 py-2.5 text-sm font-semibold text-tacte-primary-800 shadow-xs hover:bg-tacte-primary-100 hover:text-tacte-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tacte-primary-500"

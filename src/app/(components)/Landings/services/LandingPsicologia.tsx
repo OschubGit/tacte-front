@@ -7,6 +7,7 @@ import CTACenteredWithGradient from "../../CTAs/CTACenteredWithGradient";
 import LandingAboutMeSticky from "../LandingAboutMeSticky";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
+import { Services } from "@/lib/enums";
 
 const features = [
   {
@@ -81,7 +82,7 @@ const LandingPsicologia = ({ service }: { service: string }) => {
       <LandingHero
         title="Un espacio seguro para tu bienestar emocional"
         description="Acompañamiento psicológico para niños, adolescentes y adultos. Encuentra herramientas para gestionar tus emociones, afrontar desafíos y reconectar contigo mismo con más calma y seguridad."
-        type="psicologia"
+        type={Services.PSYCHOLOGY}
         ctaPrimary={{
           text: "Reservar cita",
           href: "/reservas",

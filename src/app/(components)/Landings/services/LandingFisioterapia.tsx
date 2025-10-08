@@ -8,6 +8,7 @@ import FooterSimpleCentered from "../../Footers/FooterSimpleCentered";
 import LandingAboutMeSticky from "../LandingAboutMeSticky";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
+import { Services } from "@/lib/enums";
 
 const features = [
   {
@@ -93,6 +94,7 @@ const LandingFisioterapia = ({ service }: { service: string }) => {
         title="Recupera tu bienestar desde un enfoque integral"
         description="Fisioterapia, ejercicio terapéutico y técnicas complementarias para aliviar el dolor, reconectar con tu cuerpo y recuperar la calidad de vida."
         backgroundImage="/images/hero_yoga.jpg"
+        type={Services.PILATES}
       />
       <LandingAboutMe
         subtitle="Sobre mi"

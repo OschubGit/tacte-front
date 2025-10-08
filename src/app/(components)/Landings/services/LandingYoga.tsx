@@ -6,6 +6,7 @@ import LandingBenefits from "../LandingBenefits";
 import CTACenteredWithGradient from "../../CTAs/CTACenteredWithGradient";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
+import { Services } from "@/lib/enums";
 
 const features = [
   {
@@ -90,7 +91,7 @@ const LandingYoga = ({ service }: { service: string }) => {
       <LandingHero
         title="Encuentra equilibrio a través del yoga"
         description="Conecta con tu cuerpo. Calma tu mente. Respira presente."
-        type="yoga"
+        type={Services.YOGA}
         backgroundImage="/images/hero_yoga.jpg"
       />
       <LandingAboutMe

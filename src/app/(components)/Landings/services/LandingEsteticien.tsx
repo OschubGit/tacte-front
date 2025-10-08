@@ -8,6 +8,7 @@ import FooterSimpleCentered from "../../Footers/FooterSimpleCentered";
 import LandingAboutMeSticky from "../LandingAboutMeSticky";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
+import { Services } from "@/lib/enums";
 
 const LandingEsteticien = ({ service }: { service: string }) => {
   // Hero Section props
@@ -121,6 +122,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
       <LandingHero
         {...landingHero}
         backgroundImage="/images/hero_estetica.jpg"
+        type={Services.AESTHETICS}
       />
       <LandingAboutMe
         subtitle="Sobre mi"

@@ -4,3 +4,12 @@ export enum TabNames {
   AVAILABLE = "Sesiones disponibles",
   CANCELLED = "Canceladas",
 }
+
+export enum Services {
+  NUTRITION = "nutrition",
+  PILATES = "pilates",
+  YOGA = "yoga",
+  OSTEOPATHY = "osteopathy",
+  PSYCHOLOGY = "psychology",
+  AESTHETICS = "aesthetics",
+}

@@ -6,6 +6,7 @@ import LandingBenefits from "../LandingBenefits";
 import CTACenteredWithGradient from "../../CTAs/CTACenteredWithGradient";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
+import { Services } from "@/lib/enums";
 
 const features = [
   {
@@ -101,7 +102,7 @@ const LandingNutricion = ({ service }: { service: string }) => {
       <LandingHero
         title="Alimentación consciente, resultados reales"
         description="Acompañamiento nutricional personalizado para mejorar tu salud, energía y relación con la comida, sin dietas extremas."
-        type="nutricion"
+        type={Services.NUTRITION}
         ctaPrimary={{
           text: "Reservar cita",
           href: "/reservas",

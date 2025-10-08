@@ -13,6 +13,7 @@ import {
   LockClosedIcon,
 } from "@heroicons/react/24/outline";
 import LandingAboutMe from "../AboutMe";
+import { Services } from "@/lib/enums";
 
 /* 
 
@@ -123,6 +124,7 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
         title="Recupera tu cuerpo con Osteopatía"
         description="Terapia manual integral para aliviar dolores, mejorar tu movilidad y ayudarte a reconectar con tu bienestar natural."
         backgroundImage="/images/hero_osteopatia.jpg"
+        type={Services.OSTEOPATHY}
         ctaPrimary={{
           text: "Reservar cita",
           href: "tel:666666666",
