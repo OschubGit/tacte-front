@@ -142,11 +142,6 @@ export default function Drawer({
                   <div className="relative h-full overflow-y-auto bg-white p-8">
                     <div className="space-y-6 pb-16">
                       <div>
-                        {/* <img
-                                                alt=""
-                                                src="https://images.unsplash.com/photo-1582053433976-25c00369fc93?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=512&q=80"
-                                                className="block aspect-10/7 w-full rounded-lg bg-gray-100 object-cover outline -outline-offset-1 outline-black/5"
-                                            /> */}
                         <div className="mt-4 flex items-start justify-between">
                           <div>
                             <h2 className="text-base font-semibold text-gray-900 mb-3">
@@ -155,7 +150,7 @@ export default function Drawer({
                               </span>
                             </h2>
                             {session.status === "full" ? (
-                              <div className="w-fit rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 inset-ring inset-ring-gray-500/10">
+                              <div className="w-fit rounded-full bg-red-50 px-2 py-1 text-xs font-medium text-red-700 inset-ring inset-ring-red-700/30">
                                 Sin plazas
                               </div>
                             ) : null}

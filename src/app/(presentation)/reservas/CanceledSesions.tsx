@@ -2,6 +2,7 @@ import React from "react";
 import { Sessions } from "@/lib/types";
 import { CalendarIcon } from "@heroicons/react/24/outline";
 import IconCancelBox from "@/app/(components)/icons/IconCancelBox";
+import { translateType } from "@/lib/functions";
 
 const CanceledSesions = ({
   cancelledSessions,
@@ -31,7 +32,7 @@ const CanceledSesions = ({
               <li className="relative flex gap-x-6 py-3 xl:static">
                 <div className="flex-auto">
                   <h3 className="pr-10 font-semibold text-tacte-primary-700 xl:pr-0">
-                    Sesión de {s.type}
+                    Sesión de {translateType(s.type)}
                   </h3>
                   <dl className="mt-2 flex flex-col text-gray-500 xl:flex-row">
                     <div className="flex items-start gap-x-3">

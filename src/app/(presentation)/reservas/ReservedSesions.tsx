@@ -1,6 +1,6 @@
 import React from "react";
 import { Sessions } from "@/lib/types";
-import { hasMoreThanHalf } from "@/lib/functions";
+import { hasMoreThanHalf, translateType } from "@/lib/functions";
 import { CalendarIcon } from "@heroicons/react/24/outline";
 import IconBooked from "@/app/(components)/icons/IconBooked";
 
@@ -33,7 +33,7 @@ const ReservedSesions = ({
                   <span className="text-gray-500">/</span>
                 </h2>
                 {s.status === "full" ? (
-                  <div className="w-fit rounded-full bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 inset-ring inset-ring-gray-500/10">
+                  <div className="w-fit rounded-full bg-red-50 px-2 py-1 text-xs font-medium text-red-700 inset-ring inset-ring-red-700/30">
                     Sin plazas
                   </div>
                 ) : null}
@@ -57,7 +57,7 @@ const ReservedSesions = ({
               <li className="relative flex gap-x-6 py-3 xl:static">
                 <div className="flex-auto">
                   <h3 className="pr-10 font-semibold text-tacte-primary-700 xl:pr-0">
-                    Sesión de {s.type}
+                    Sesión de {translateType(s.type)}
                   </h3>
                   <dl className="mt-2 flex flex-col text-gray-500 xl:flex-row">
                     <div className="flex items-start gap-x-3">

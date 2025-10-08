@@ -20,3 +20,22 @@ export const mapMessageToError = (message: string) => {
       return message;
   }
 };
+
+export const translateType = (type: string) => {
+  switch (type) {
+    case "pilates":
+      return "Pilates";
+    case "yoga":
+      return "Yoga";
+    case "nutrition":
+      return "Nutrición";
+    case "aesthetics":
+      return "Estética";
+    case "psychology":
+      return "Psicología";
+    case "osteopathy":
+      return "Quiromasaje y Osteopatía";
+    default:
+      return type;
+  }
+};

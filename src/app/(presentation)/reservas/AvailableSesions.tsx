@@ -5,6 +5,7 @@ import { CalendarIcon } from "@heroicons/react/24/outline";
 import IconList from "@/app/(components)/icons/IconList";
 import { useAuthStore } from "@/stores/authStore";
 import { useRouter } from "next/navigation";
+import { translateType } from "@/lib/functions";
 
 const AvailableSesions = ({
   availableSessions,
@@ -17,9 +18,10 @@ const AvailableSesions = ({
 }) => {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const router = useRouter();
+
   return (
     <>
-      {availableSessions.length > 0 && (
+      {availableSessions?.length > 0 && (
         <>
           <div className="mb-4 flex items-center gap-x-2 justify-start text-tacte-primary-700 p-8 bg-[#ebefdd8c] rounded-lg">
             <IconList className="size-6 text-tacte-primary-700" />
@@ -61,7 +63,7 @@ const AvailableSesions = ({
               <li className="relative flex gap-x-6 py-3 xl:static">
                 <div className="flex-auto">
                   <h3 className="pr-10 font-semibold text-tacte-primary-700 xl:pr-0">
-                    Sesión de {s.type}
+                    Sesión de {translateType(s.type)}
                   </h3>
                   <dl className="mt-2 flex flex-col text-gray-500 xl:flex-row">
                     <div className="flex items-start gap-x-3">
