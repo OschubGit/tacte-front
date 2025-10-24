@@ -95,6 +95,7 @@ const LandingFisioterapia = ({ service }: { service: string }) => {
         description="Fisioterapia, ejercicio terapéutico y técnicas complementarias para aliviar el dolor, reconectar con tu cuerpo y recuperar la calidad de vida."
         backgroundImage="/images/hero_yoga.jpg"
         type={Services.PILATES}
+        phone="644561382"
       />
       <LandingAboutMe
         subtitle="Sobre mi"

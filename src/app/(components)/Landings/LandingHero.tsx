@@ -13,6 +13,7 @@ interface NavigationItem {
 
 interface LandingHeroProps {
   type?: string;
+  phone?: string;
   navigation?: NavigationItem[];
   logo?: {
     src: string;
@@ -45,6 +46,7 @@ const defaultNavigation = [
 
 export default function LandingHero({
   type,
+  phone,
   navigation = defaultNavigation,
   logo = {
     src: "/logo-tacte.png",
@@ -120,7 +122,7 @@ export default function LandingHero({
                 type !== Services.NUTRITION &&
                 type !== Services.PILATES ? (
                   <a
-                    href={"tel:+34698903934"}
+                    href={phone ? `tel:${phone}` : "tel:+34698903934"}
                     className="rounded-md bg-tacte-primary-50 px-3.5 py-2.5 text-sm font-semibold text-tacte-primary-800 shadow-xs hover:bg-tacte-primary-100 hover:text-tacte-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tacte-primary-500"
                   >
                     {ctaPrimary.text}

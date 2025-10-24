@@ -4,7 +4,7 @@ const people = [
   {
     name: "Alex Monzó",
     role: "Osteopatía y Quiromasaje",
-    imageUrl: "/services/masage-vert-5.webp",
+    imageUrl: "/profesionals/alex-ptoffesional.webp",
     bio: "Mi propósito es acompañarte a recuperar tu bienestar a través de un enfoque global y adaptado a ti. En cada sesión trabajamos juntos para entender lo que tu cuerpo necesita, liberar tensiones y avanzar en tu proceso de sanación",
     link: "/profesionales/alex-monzo",
     description:

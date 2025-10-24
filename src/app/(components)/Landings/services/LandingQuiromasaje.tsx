@@ -125,9 +125,10 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
         description="Terapia manual integral para aliviar dolores, mejorar tu movilidad y ayudarte a reconectar con tu bienestar natural."
         backgroundImage="/images/hero_osteopatia.jpg"
         type={Services.OSTEOPATHY}
+        phone="633615655"
         ctaPrimary={{
           text: "Reservar cita",
-          href: "tel:666666666",
+          href: "tel:633615655",
         }}
         ctaSecondary={{
           text: "Ver horarios",
@@ -164,12 +165,12 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
           className:
             "w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228",
         }}
-        imagesVert={["/services/masage-vert-5.webp"]}
+        imagesVert={["/services/massage-vertical-_1_.webp"]}
         showIcons={false}
       />
       <LandingBenefits benefits={benefits} />
       <SimpleCarrousel />
-      <CTACenteredWithGradient />
+      <CTACenteredWithGradient phone="+34633615655" />
       <LandingFaqs faqs={faqs} />
     </>
   );

@@ -5,7 +5,7 @@ import { GlassButton } from "../Buttons/Buttons";
 import SvgCercleDegradation from "../SVGDecoration/SvgCercleDegradation";
 import { useAuth } from "@/hooks/useAuth";
 
-export default function CTACenteredWithGradient() {
+export default function CTACenteredWithGradient({ phone }: { phone?: string }) {
   const { isAuthenticated } = useAuth();
   return (
     <div className="relative isolate overflow-hidden bg-tacte-primary-700">
@@ -20,7 +20,16 @@ export default function CTACenteredWithGradient() {
             mente necesitan: empieza hoy a cuidarte como mereces.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <GlassButton href={"/reservas"}>Reserva tu cita</GlassButton>
+            {phone ? (
+              <a
+                href={`tel:${phone}`}
+                className="rounded-md bg-tacte-primary-50 px-3.5 py-2.5 text-sm font-semibold text-tacte-primary-800 shadow-xs hover:bg-tacte-primary-100 hover:text-tacte-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tacte-primary-500"
+              >
+                Llámanos
+              </a>
+            ) : (
+              <GlassButton href={"/reservas"}>Reserva tu cita</GlassButton>
+            )}
             <Link
               href="/contacto"
               className="text-sm/6 font-semibold text-white hover:text-gray-300"

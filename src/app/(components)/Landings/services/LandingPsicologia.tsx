@@ -87,6 +87,7 @@ const LandingPsicologia = ({ service }: { service: string }) => {
           text: "Reservar cita",
           href: "/reservas",
         }}
+        phone="623432322"
         backgroundImage="/images/hero_psicologia.jpg"
       />
       <LandingAboutMe
@@ -108,7 +109,7 @@ const LandingPsicologia = ({ service }: { service: string }) => {
       />
       <LandingBenefits benefits={benefits} />
       <SimpleCarrousel />
-      <CTACenteredWithGradient />
+      <CTACenteredWithGradient phone="623432322" />
       <LandingFaqs faqs={faqs} />
     </>
   );

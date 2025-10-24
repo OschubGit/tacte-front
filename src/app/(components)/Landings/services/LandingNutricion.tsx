@@ -107,6 +107,7 @@ const LandingNutricion = ({ service }: { service: string }) => {
           text: "Reservar cita",
           href: "/reservas",
         }}
+        phone="622573834"
         backgroundImage="/services/hero_nutricion.webp"
       />
       <LandingAboutMe

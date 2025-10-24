@@ -123,6 +123,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
         {...landingHero}
         backgroundImage="/images/hero_estetica.jpg"
         type={Services.AESTHETICS}
+        phone="669267186"
       />
       <LandingAboutMe
         subtitle="Sobre mi"
@@ -138,7 +139,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
       <LandingFeatureSection {...landingFeatures} />
       <LandingBenefits benefits={benefits} />
       <SimpleCarrousel />
-      <CTACenteredWithGradient />
+      <CTACenteredWithGradient phone="+34669267186" />
       <LandingFaqs faqs={faqs} />
     </>
   );
