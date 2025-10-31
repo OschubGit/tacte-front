@@ -4,7 +4,7 @@ const benefits = [
   "Telf: 698903934",
   "Email: alexmonzobarbera94@gmail.com",
   "En el centro: Carlos tortosa juan 10, Monóvar (Alicante)",
-  "En redes: tacte_masajes_bienestar",
+  "En redes: tacte_salud",
   "Horario: De 9:30 de la mañana a 13:00 y de 16:00 a 21:00",
 ];
 
