@@ -6,15 +6,15 @@ const links = [
     href: "https://www.instagram.com/tacte_salud/",
     description: "Síguenos en Instagram",
   },
-  {
+  /* {
     name: "Email tacte.masajes@gmail.com",
     href: "mailto:tacte.masajes@gmail.com",
     description: "Envíanos un correo a tacte.masajes@gmail.com",
-  },
+  }, */
   {
     name: "Llámanos al 698903934",
     href: "tel:698903934",
-    description: "Llámanos de lunes a viernes de 9:00 a 18:00",
+    description: "Llámanos de lunes a viernes de 9:30 a 18:00",
   },
 ];
 

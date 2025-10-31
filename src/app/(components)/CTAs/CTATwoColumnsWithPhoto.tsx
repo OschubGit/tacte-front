@@ -5,7 +5,7 @@ const benefits = [
   "Email: alexmonzobarbera94@gmail.com",
   "En el centro: Carlos tortosa juan 10, Monóvar (Alicante)",
   "En redes: tacte_masajes_bienestar",
-  "Horario: De 8:00 de la mañana a 13:00 y de 16:00 a 21:00",
+  "Horario: De 9:30 de la mañana a 13:00 y de 16:00 a 21:00",
 ];
 
 export default function CTATwoColumnsWithPhoto() {
