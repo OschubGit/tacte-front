@@ -69,7 +69,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
       alt: "Tratamientos de estética profesional",
     },
     showIcons: false,
-    imagesVert: ["/services/estetica-vert-5.webp"],
+    imagesVert: ["/services/skeyndor-5.jpg"],
   };
 
   // Benefits props
@@ -130,10 +130,10 @@ const LandingEsteticien = ({ service }: { service: string }) => {
         title="Isabel Barberá"
         content="Soy una profesional apasionada por la estética y el bienestar, con experiencia en tratamientos faciales, corporales y terapias holísticas. Mi enfoque se basa en crear protocolos personalizados que unen tecnología avanzada y técnicas tradicionales, logrando resultados visibles y una experiencia de cuidado integral. Mi misión es ayudarte a resaltar tu belleza natural y a recuperar el equilibrio entre cuerpo y mente, siempre con un trato cercano y profesional."
         imagesVert={[
-          "/services/estetica-vert-1.webp",
-          "/services/estetica-vert-2.webp",
-          "/services/estetica-vert-3.webp",
-          "/services/estetica-vert-4.webp",
+          "/services/skeyndor-1.jpg",
+          "/services/skeyndor-2.jpg",
+          "/services/skeyndor-3.jpg",
+          "/services/skeyndor-4.jpg",
         ]}
       />
       <LandingFeatureSection {...landingFeatures} />

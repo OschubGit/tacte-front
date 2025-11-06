@@ -10,5 +10,6 @@ export const API_CONFIG = {
     RESERVE_SESSION: "/reserve-session",
     CANCEL_RESERVATION: "/cancel-reservation",
     PUBLIC_SESSIONS: "/sessions-public",
+    RECOVERY_PASSWORD: "/recovery-password",
   },
 };
