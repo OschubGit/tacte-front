@@ -19,10 +19,6 @@ const navigation = {
     { name: "Esteticién", href: "/servicios/esteticien" },
     { name: "Nutrición", href: "/servicios/nutricion" },
     { name: "Canal ético", href: "https://tactesalud.canales-eticos.com/#/" },
-    {
-      name: "Política de protecciones de datos",
-      href: "/politica-protecciones-datos",
-    },
   ],
   social: [
     /* {
@@ -87,6 +83,20 @@ const navigation = {
             ),
         }, */
   ],
+  legal: [
+    {
+      name: "Política de cookies",
+      href: "/politica-de-cookies",
+    },
+    {
+      name: "Política de privacidad",
+      href: "/politica-de-privacidad",
+    },
+    {
+      name: "Política de protecciones de datos",
+      href: "/politica-protecciones-datos",
+    },
+  ],
 };
 
 export default function FooterSimpleCentered({
@@ -102,6 +112,24 @@ export default function FooterSimpleCentered({
           className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
         >
           {navigation.main.map((item) => (
+            <a
+              key={item.name}
+              href={item.href}
+              className={`${
+                darkMode
+                  ? "text-gray-400 hover:text-white"
+                  : "text-gray-600 hover:text-gray-900"
+              }`}
+            >
+              {item.name}
+            </a>
+          ))}
+        </nav>
+        <nav
+          aria-label="Footer"
+          className="mt-16 -mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
+        >
+          {navigation.legal.map((item) => (
             <a
               key={item.name}
               href={item.href}

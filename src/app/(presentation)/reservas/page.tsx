@@ -21,11 +21,14 @@ export default function ReservasPage() {
   const [selected, setSelected] = useState<Date>();
   const user = useAuthStore((state) => state.user);
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
+  const [hasAcceptedLegalTerms, setHasAcceptedLegalTerms] = useState(false);
   const [activeTab, setActiveTab] = useState<string>(TabNames.ALL);
 
   const fetchPublicSessions = async (): Promise<void> => {
     const sessions = await api.publicSessions({
-      datefrom: selected?.toISOString().split("T")[0],
+      datefrom:
+        selected?.toISOString().split("T")[0] ??
+        new Date().toISOString().split("T")[0],
       dateto: selected?.toISOString().split("T")[0],
     });
     setSessions(sessions.sessions);
@@ -43,7 +46,13 @@ export default function ReservasPage() {
     setSessions(sessions.sessions);
   };
 
+  /* const getUserInfo = async (): Promise<void> => {
+    const userInfo = await api.getUser();
+    console.log(userInfo);
+  }; */
+
   useEffect(() => {
+    /* getUserInfo(); */
     if (!isAuthenticated) {
       fetchPublicSessions();
     } else {

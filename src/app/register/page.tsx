@@ -203,13 +203,19 @@ export default function RegisterPage() {
                       </div>
                     </div>
                     <div className="text-sm/6">
-                      <p id="offers-description" className="text-gray-500">
+                      <p id="offers-description" className="text-gray-500 ml-5">
                         He leido y acepto las{" "}
+                        <a
+                          href="/politica-de-privacidad"
+                          className="font-semibold text-tacte-primary-600 hover:text-tacte-primary-500"
+                        >
+                          política de privacidad
+                        </a>{" "}
                         <a
                           href="/politica-protecciones-datos"
                           className="font-semibold text-tacte-primary-600 hover:text-tacte-primary-500"
                         >
-                          políticas y protecciones de datos
+                          y protecciones de datos
                         </a>
                       </p>
                     </div>

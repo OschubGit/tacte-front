@@ -187,12 +187,12 @@ export default function HeaderWithFlyoutMenu() {
           >
             Reservas
           </Link>
-          <Link
+          {/* <Link
             href="/contacto"
             className="text-sm/6 font-semibold text-gray-900"
           >
             Contacto
-          </Link>
+          </Link> */}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           {isAuthenticated ? (
@@ -280,12 +280,12 @@ export default function HeaderWithFlyoutMenu() {
                 >
                   Reservas
                 </Link>
-                <Link
+                {/* <Link
                   href="/contacto"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Contacto
-                </Link>
+                </Link> */}
                 <Link
                   href="/profesionales"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"

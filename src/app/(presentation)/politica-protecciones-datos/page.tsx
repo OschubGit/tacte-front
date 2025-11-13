@@ -95,6 +95,108 @@ const PoliticaProteccionesDatosPage = () => {
                 incapaz.
               </p>
             </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+                3. Información básica sobre protección de datos
+              </h2>
+              <section className="p-6">
+                <div className="overflow-x-auto">
+                  <table className="w-full table-fixed border-collapse">
+                    <colgroup>
+                      <col className="w-1/3" />
+                      <col className="w-2/3" />
+                    </colgroup>
+
+                    <tbody className="divide-y">
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Responsable del tratamiento
+                        </th>
+                        <td className="py-4">Alex Monzó Barberá</td>
+                      </tr>
+
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Dirección del responsable
+                        </th>
+                        <td className="py-4">
+                          Carlos Tortosa Juan 10, 03640 - Monover / Monovar
+                          (Alicante)
+                        </td>
+                      </tr>
+
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Finalidad
+                        </th>
+                        <td className="py-4">
+                          Sus datos serán usados para poder atender sus
+                          solicitudes y prestarle nuestros servicios.
+                        </td>
+                      </tr>
+
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Información de interés
+                        </th>
+                        <td className="py-4">
+                          Únicamente le enviaremos comunicaciones de su interés
+                          con su autorización previa, que podrá facilitarnos
+                          mediante la casilla correspondiente establecida al
+                          efecto.
+                        </td>
+                      </tr>
+
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Legitimación
+                        </th>
+                        <td className="py-4">
+                          Únicamente trataremos sus datos con su consentimiento
+                          previo, que podrá facilitarnos mediante la casilla
+                          correspondiente establecida al efecto.
+                        </td>
+                      </tr>
+
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Destinatarios
+                        </th>
+                        <td className="py-4">
+                          Con carácter general, sólo el personal de nuestra
+                          entidad que esté debidamente autorizado podrá tener
+                          conocimiento de la información que le pedimos.
+                        </td>
+                      </tr>
+
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Derechos
+                        </th>
+                        <td className="py-4">
+                          Tiene derecho a saber qué información tenemos sobre
+                          usted, corregirla y eliminarla, tal y como se explica
+                          en la información adicional disponible en nuestra
+                          página web.
+                        </td>
+                      </tr>
+
+                      <tr className="align-top">
+                        <th className="text-left font-semibold py-4 pr-4">
+                          Información adicional
+                        </th>
+                        <td className="py-4">
+                          Más información en el apartado{" "}
+                          <strong>“POLÍTICA DE PRIVACIDAD”</strong> de nuestra
+                          página web.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+            </section>
           </div>
         </div>
       </main>
