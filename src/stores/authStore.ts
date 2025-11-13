@@ -22,7 +22,8 @@ interface AuthActions {
     name: string,
     email: string,
     password: string,
-    password_confirmation: string
+    password_confirmation: string,
+    accepted_legal_terms: boolean
   ) => Promise<boolean>;
   logout: () => Promise<void>;
   checkAuth: () => Promise<void>;
@@ -78,7 +79,8 @@ export const useAuthStore = create<AuthStore>()(
         name: string,
         email: string,
         password: string,
-        password_confirmation: string
+        password_confirmation: string,
+        accepted_legal_terms: boolean
       ) => {
         set({ isLoading: true, error: null });
 
@@ -87,7 +89,8 @@ export const useAuthStore = create<AuthStore>()(
             name,
             email,
             password,
-            password_confirmation
+            password_confirmation,
+            accepted_legal_terms
           );
 
           if (response.success) {

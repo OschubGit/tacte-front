@@ -10,6 +10,7 @@ export default function RegisterPage() {
     email: "",
     password: "",
     password_confirmation: "",
+    accepted_legal_terms: false,
   });
   const router = useRouter();
   const { register, isLoading, error, isAuthenticated, clearError } = useAuth();
@@ -22,10 +23,10 @@ export default function RegisterPage() {
   }, [isAuthenticated, router]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
@@ -37,7 +38,8 @@ export default function RegisterPage() {
       formData.name,
       formData.email,
       formData.password,
-      formData.password_confirmation
+      formData.password_confirmation,
+      formData.accepted_legal_terms
     );
 
     if (success) {
@@ -171,8 +173,10 @@ export default function RegisterPage() {
                       <div className="group grid size-4 grid-cols-1">
                         <input
                           id="offers"
-                          name="offers"
+                          name="accepted_legal_terms"
                           type="checkbox"
+                          checked={formData.accepted_legal_terms}
+                          onChange={handleChange}
                           aria-describedby="offers-description"
                           className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-tacte-primary-600 checked:bg-tacte-primary-600 indeterminate:border-tacte-primary-600 indeterminate:bg-tacte-primary-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tacte-primary-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                         />
@@ -222,7 +226,7 @@ export default function RegisterPage() {
                   <div>
                     <button
                       type="submit"
-                      disabled={isLoading}
+                      disabled={isLoading || !formData.accepted_legal_terms}
                       className="flex w-full justify-center rounded-md bg-tacte-primary-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-tacte-primary-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tacte-primary-600 disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       {isLoading ? "Iniciando registro..." : "Registrarse"}

@@ -24,11 +24,11 @@ export const api = {
     name: string,
     email: string,
     password: string,
-    password_confirmation: string
+    password_confirmation: string,
+    accepted_legal_terms: boolean
   ) => {
     try {
       const url = `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.REGISTER}`;
-      console.log("Making request to:", url);
 
       const response = await fetch(url, {
         method: "POST",
@@ -42,6 +42,7 @@ export const api = {
           email,
           password,
           password_confirmation,
+          accepted_legal_terms,
         }),
       });
 
