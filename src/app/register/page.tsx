@@ -167,7 +167,7 @@ export default function RegisterPage() {
                   </div>
 
                   <div className="flex items-center justify-between">
-                    <div className="flex h-6 shrink-0 items-center">
+                    {/* <div className="flex h-6 shrink-0 items-center">
                       <div className="group grid size-4 grid-cols-1">
                         <input
                           id="offers"
@@ -197,7 +197,7 @@ export default function RegisterPage() {
                           />
                         </svg>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="text-sm/6">
                       <p id="offers-description" className="text-gray-500">
                         He leido y acepto las{" "}
