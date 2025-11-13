@@ -11,5 +11,6 @@ export const API_CONFIG = {
     CANCEL_RESERVATION: "/cancel-reservation",
     PUBLIC_SESSIONS: "/sessions-public",
     RECOVERY_PASSWORD: "/recovery-password",
+    ACCEPT_LEGAL_TERMS_UNREGISTERED: "/accept-legal-terms-unregistered",
   },
 };

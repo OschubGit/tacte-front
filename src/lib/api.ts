@@ -198,4 +198,28 @@ export const api = {
 
     return response.json();
   },
+
+  accepetConsent: async (
+    first_name: string,
+    last_name: string,
+    email: string
+  ) => {
+    const response = await fetch(
+      `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.ACCEPT_LEGAL_TERMS_UNREGISTERED}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          first_name,
+          last_name,
+          email,
+        }),
+      }
+    );
+
+    return response.json();
+  },
 };
