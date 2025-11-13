@@ -34,7 +34,9 @@ export default function ReservasPage() {
   const fetchSessions = async (type?: string): Promise<void> => {
     const sessions = await api.getSessions({
       type: type ?? null,
-      datefrom: selected?.toISOString().split("T")[0],
+      datefrom:
+        selected?.toISOString().split("T")[0] ??
+        new Date().toISOString().split("T")[0],
       dateto: selected?.toISOString().split("T")[0],
       user_id: user?.id ? String(user.id) : undefined,
     });
