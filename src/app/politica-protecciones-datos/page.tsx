@@ -68,8 +68,7 @@ const PoliticaProteccionesDatosPage = () => {
 
             <section>
               <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
-                2. Permisos específicos (marque la casilla correspondiente en
-                caso afirmativo):
+                2. Permisos específicos
               </h2>
               <p className="mb-4">
                 - Consiento el uso de los datos sobre mi salud para poder

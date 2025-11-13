@@ -18,6 +18,11 @@ const navigation = {
     { name: "Yoga", href: "/servicios/yoga" },
     { name: "Esteticién", href: "/servicios/esteticien" },
     { name: "Nutrición", href: "/servicios/nutricion" },
+    { name: "Canal ético", href: "https://tactesalud.canales-eticos.com/#/" },
+    {
+      name: "Política de protecciones de datos",
+      href: "/politica-protecciones-datos",
+    },
   ],
   social: [
     /* {
