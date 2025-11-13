@@ -166,8 +166,8 @@ export default function RegisterPage() {
                     </div>
                   </div>
 
-                  {/* <div className="flex items-center justify-between"> */}
-                  {/* <div className="flex h-6 shrink-0 items-center">
+                  <div className="flex items-center justify-between">
+                    <div className="flex h-6 shrink-0 items-center">
                       <div className="group grid size-4 grid-cols-1">
                         <input
                           id="offers"
@@ -197,8 +197,8 @@ export default function RegisterPage() {
                           />
                         </svg>
                       </div>
-                    </div> */}
-                  {/* <div className="text-sm/6">
+                    </div>
+                    <div className="text-sm/6">
                       <p id="offers-description" className="text-gray-500">
                         He leido y acepto las{" "}
                         <a
@@ -208,8 +208,8 @@ export default function RegisterPage() {
                           políticas y protecciones de datos
                         </a>
                       </p>
-                    </div> */}
-                  {/* </div> */}
+                    </div>
+                  </div>
                   {/* <div className="text-sm/6">
                                             <a
                                                 href="#"
