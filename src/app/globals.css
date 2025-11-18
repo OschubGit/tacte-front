@@ -101,3 +101,7 @@ input:-webkit-autofill {
 .beaver-widget_text {
   margin-top: 1.5rem;
 }
+
+.beaver-widget_review-hover.beaver-widget_review-hover:hover  {
+  height: none !important;
+}
