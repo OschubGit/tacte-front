@@ -123,7 +123,7 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
       <LandingHero
         title="Recupera tu cuerpo con Osteopatía"
         description="Terapia manual integral para aliviar dolores, mejorar tu movilidad y ayudarte a reconectar con tu bienestar natural."
-        backgroundImage="/images/hero_osteopatia.jpg"
+        backgroundImage="/images/hero_osteopatia.webp"
         type={Services.OSTEOPATHY}
         phone="698903934"
         ctaPrimary={{
@@ -165,7 +165,7 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
           className:
             "w-3xl max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-228",
         }}
-        imagesVert={["/services/massage-vertical-_1_.webp"]}
+        imagesVert={["/services/massage-vertical-1.webp"]}
         showIcons={false}
       />
       <LandingBenefits benefits={benefits} />
