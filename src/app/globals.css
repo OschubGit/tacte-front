@@ -89,3 +89,15 @@ input:-webkit-autofill {
   color: white;
   border-radius: 50%;
 }
+
+.beaver-widget_review-footer {
+  display: none !important;
+}
+
+.beaver-widget_review {
+  border: 1px solid #dce3c3 !important;
+}
+
+.beaver-widget_text {
+  margin-top: 1.5rem;
+}

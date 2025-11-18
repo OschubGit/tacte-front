@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
   // Deshabilitar optimización de imágenes para evitar warnings
   images: {
     unoptimized: true,
+    domains: ["lh3.googleusercontent.com"],
   },
   /* async rewrites() {
     return [
