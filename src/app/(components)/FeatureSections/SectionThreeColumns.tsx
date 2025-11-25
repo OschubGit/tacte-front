@@ -9,10 +9,10 @@ import iconHand from "../icons/iconHand";
 
 const features = [
   {
-    name: "Quiromasaje y Osteopatía",
+    name: "Masaje Técnico y Relajante",
     description:
       "Ayudamos a las personas a mejorar su calidad de vida con masajes y también a evaluar estructuras para saber como poder enfocar un tratamiento.",
-    href: "/servicios/quiromasaje-osteopatia",
+    href: "/servicios/masaje",
     icon: IconMassage,
   },
   {

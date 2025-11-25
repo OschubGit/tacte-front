@@ -24,14 +24,21 @@ import Link from "next/link";
 import { useAuth } from "@/hooks/useAuth";
 import IconCalendar from "../icons/IconCalendar";
 import iconHand from "../icons/iconHand";
+import IconHandball from "../icons/IconHandball";
 import IconPilates from "../icons/IconPilates";
 
 const products = [
   {
-    name: "Quiromasaje y Osteopatía",
-    description: "Para relajar y mejorar la salud de tu cuerpo",
-    href: "/servicios/quiromasaje-osteopatia",
+    name: "Masaje",
+    description: "Alivia tensiones y reduce el estrés",
+    href: "/servicios/masaje",
     icon: IconMassage,
+  },
+  {
+    name: "Masaje Deportivo",
+    description: "Mejora tu rendimiento y acelera tu recuperación",
+    href: "/servicios/masaje-deportivo",
+    icon: IconHandball,
   },
   {
     name: "Psicología",

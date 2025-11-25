@@ -7,9 +7,14 @@ interface FooterSimpleCenteredProps {
 const navigation = {
   main: [
     {
-      name: "Quiromasaje y Osteopatía",
-      href: "/servicios/quiromasaje-osteopatia",
+      name: "Masaje Técnico y Relajante",
+      href: "/servicios/masaje",
     },
+    {
+      name: "Masaje Deportivo",
+      href: "/servicios/masaje-deportivo",
+    },
+
     { name: "Psicología", href: "/servicios/psicologia" },
     {
       name: "Fisioterapia y Pilates",
