@@ -64,6 +64,16 @@ export default function ReservasPage() {
     fetchSessions(service);
   };
 
+  const holidays = [
+    new Date(2025, 11, 24),
+    new Date(2025, 11, 25),
+    new Date(2025, 11, 26),
+    new Date(2025, 11, 31),
+    new Date(2026, 0, 1),
+    new Date(2026, 0, 5),
+    new Date(2026, 0, 6),
+  ];
+
   return (
     <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
       <div className="bg-white pb-24">
@@ -112,9 +122,11 @@ export default function ReservasPage() {
                   session.cancelled === false && session.reserved_by_user
               )
               .map((session) => new Date(session.date)),
+            holidays: holidays,
           }}
           modifiersClassNames={{
             booked: "bg-green-100 text-red-600 rounded-full",
+            holidays: "bg-red-100 text-red-600 rounded-full font-semibold",
           }}
           footer={<CalendarFooter selected={selected} />}
           captionLayout="label"
@@ -185,9 +197,14 @@ const CalendarFooter = ({ selected }: { selected: Date | undefined }) => {
           </div>
         )}
 
-        <div className="pt-4 pb-1 text-left text-tacte-primary-600 text-xs">
+        <div className="pt-4 pb-1 text-left text-green-700 text-xs">
           <p>
             Los dias marcados en verde indican los dias que tienes reservas.
+          </p>
+        </div>
+        <div className="pt-4 pb-1 text-left text-red-500 text-xs">
+          <p>
+            Los dias marcados en rojo indican que el centro permanecerá cerrado.
           </p>
         </div>
       </div>
