@@ -126,7 +126,7 @@ export default function ReservasPage() {
           }}
           modifiersClassNames={{
             booked: "bg-green-100 text-red-600 rounded-full",
-            holidays: "bg-red-100 text-red-600 rounded-full font-semibold",
+            holidays: "bg-red-100 text-red-600 rounded-full",
           }}
           footer={<CalendarFooter selected={selected} />}
           captionLayout="label"
