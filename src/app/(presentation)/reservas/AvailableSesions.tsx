@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Sessions } from "@/lib/types";
 import { hasMoreThanHalf } from "@/lib/functions";
 import { CalendarIcon } from "@heroicons/react/24/outline";
@@ -6,6 +6,9 @@ import IconList from "@/app/(components)/icons/IconList";
 import { useAuthStore } from "@/stores/authStore";
 import { useRouter } from "next/navigation";
 import { translateType } from "@/lib/functions";
+import { toast } from "react-toastify";
+import { Services } from "@/lib/enums";
+import { api } from "@/lib/api";
 
 const AvailableSesions = ({
   availableSessions,
@@ -18,6 +21,18 @@ const AvailableSesions = ({
 }) => {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const router = useRouter();
+  const user = useAuthStore((state) => state.user);
+  const [userData, setUserData] = useState<any>(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const response = await api.getUser(user?.id.toString() || "");
+      if (response.success === true) {
+        setUserData(response.user);
+      }
+    };
+    fetchUser();
+  }, []);
 
   return (
     <>
@@ -100,8 +115,17 @@ const AvailableSesions = ({
                         if (!isAuthenticated) {
                           router.push("/login?redirect=/reservas");
                         } else {
-                          setOpenDrawer(true);
-                          setSession(s);
+                          if (
+                            userData?.can_reserve === false &&
+                            s.type === Services.YOGA
+                          ) {
+                            toast.info(
+                              "Todavía no tienes una suscripción activa."
+                            );
+                          } else {
+                            setOpenDrawer(true);
+                            setSession(s);
+                          }
                         }
                       }}
                       className="rounded-md px-2.5 py-1.5 text-sm bg-tacte-primary-500 text-white hover:bg-tacte-primary-400 font-semibold cursor-pointer"

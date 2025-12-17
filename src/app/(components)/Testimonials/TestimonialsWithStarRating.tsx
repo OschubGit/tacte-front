@@ -1,6 +1,5 @@
 "use client";
 import { StarIcon } from "@heroicons/react/20/solid";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import SvgCercleDegradation from "../SVGDecoration/SvgCercleDegradation";

@@ -7,6 +7,8 @@ interface User {
   id: number;
   name: string;
   email: string;
+  can_reserve: boolean;
+  accepted_legal_terms: number;
 }
 
 interface AuthState {
@@ -122,26 +124,19 @@ export const useAuthStore = create<AuthStore>()(
 
       logout: async () => {
         set({ isLoading: true });
-
-        try {
-          await api.logout();
-        } catch (error) {
-          console.error("Error al cerrar sesión:", error);
-        } finally {
-          set({
-            user: null,
-            isAuthenticated: false,
-            isLoading: false,
-            error: null,
-          });
-        }
+        set({
+          user: null,
+          isAuthenticated: false,
+          isLoading: false,
+          error: null,
+        });
       },
 
       checkAuth: async () => {
         set({ isLoading: true });
 
         try {
-          const response = await api.getUser();
+          const response = await api.getUser(get().user?.id.toString() || "");
 
           if (response.success) {
             set({

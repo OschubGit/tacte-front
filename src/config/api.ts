@@ -4,7 +4,7 @@ export const API_CONFIG = {
   ENDPOINTS: {
     LOGIN: "/login",
     REGISTER: "/register",
-    USER: "/api/user",
+    USER: "/user",
     LOGOUT: "/logout",
     SESSIONS: "/sessions",
     RESERVE_SESSION: "/reserve-session",
@@ -12,5 +12,6 @@ export const API_CONFIG = {
     PUBLIC_SESSIONS: "/sessions-public",
     RECOVERY_PASSWORD: "/recovery-password",
     ACCEPT_LEGAL_TERMS_UNREGISTERED: "/accept-legal-terms-unregistered",
+    ACCEPT_LEGAL_TERMS: "/accept-legal-terms",
   },
 };

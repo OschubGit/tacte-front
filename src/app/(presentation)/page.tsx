@@ -9,9 +9,30 @@ import HeroWithAngleImage from "@/app/(components)/HeroSections/HeroWithAngleIma
 import TestimonialsWithStarRating from "@/app/(components)/Testimonials/TestimonialsWithStarRating";
 import ModalCookies from "../(components)/Cookies/ModalCookies";
 import Cookies from "js-cookie";
+import { useAuthStore } from "@/stores/authStore";
+import ModalLegalTerms from "../(components)/ModalLegalTerms/ModalLegalTerms";
+import { api } from "@/lib/api";
 
 const HomePage = () => {
   const [openModalCookies, setOpenModalCookies] = useState(false);
+  const [openModalAcceptLegalTerms, setOpenModalAcceptLegalTerms] =
+    useState(false);
+  const user = useAuthStore((state) => state.user);
+
+  useEffect(() => {
+    if (user) {
+      const fetchUser = async () => {
+        const response = await api.getUser(user?.id.toString() || "");
+        if (
+          response.success === true &&
+          response.user.accepted_legal_terms === 0
+        ) {
+          setOpenModalAcceptLegalTerms(true);
+        }
+      };
+      fetchUser();
+    }
+  }, []);
 
   useEffect(() => {
     const cookiesAccepted =
@@ -35,6 +56,13 @@ const HomePage = () => {
       <TestimonialsWithStarRating />
       <ContentWithSplitImage />
       <CTATwoColumnsWithPhoto />
+
+      {openModalAcceptLegalTerms && (
+        <ModalLegalTerms
+          open={openModalAcceptLegalTerms}
+          onClose={() => setOpenModalAcceptLegalTerms(false)}
+        />
+      )}
 
       {openModalCookies && (
         <ModalCookies
