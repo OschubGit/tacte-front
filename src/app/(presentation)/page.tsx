@@ -11,6 +11,7 @@ import ModalCookies from "../(components)/Cookies/ModalCookies";
 import Cookies from "js-cookie";
 import { useAuthStore } from "@/stores/authStore";
 import ModalLegalTerms from "../(components)/ModalLegalTerms/ModalLegalTerms";
+import { api } from "@/lib/api";
 
 const HomePage = () => {
   const [openModalCookies, setOpenModalCookies] = useState(false);
@@ -19,10 +20,19 @@ const HomePage = () => {
   const user = useAuthStore((state) => state.user);
 
   useEffect(() => {
-    if (user?.accepted_legal_terms === 0) {
-      setOpenModalAcceptLegalTerms(true);
+    if (user) {
+      const fetchUser = async () => {
+        const response = await api.getUser(user?.id.toString() || "");
+        if (
+          response.success === true &&
+          response.user.accepted_legal_terms === 0
+        ) {
+          setOpenModalAcceptLegalTerms(true);
+        }
+      };
+      fetchUser();
     }
-  }, [user]);
+  }, []);
 
   useEffect(() => {
     const cookiesAccepted =

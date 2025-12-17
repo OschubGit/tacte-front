@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Sessions } from "@/lib/types";
 import { hasMoreThanHalf } from "@/lib/functions";
 import { CalendarIcon } from "@heroicons/react/24/outline";
@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { translateType } from "@/lib/functions";
 import { toast } from "react-toastify";
 import { Services } from "@/lib/enums";
+import { api } from "@/lib/api";
 
 const AvailableSesions = ({
   availableSessions,
@@ -21,6 +22,18 @@ const AvailableSesions = ({
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const router = useRouter();
   const user = useAuthStore((state) => state.user);
+  const [userData, setUserData] = useState<any>(null);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const response = await api.getUser(user?.id.toString() || "");
+      if (response.success === true) {
+        setUserData(response.user);
+      }
+    };
+    fetchUser();
+  }, []);
+
   return (
     <>
       {availableSessions?.length > 0 && (
@@ -103,7 +116,7 @@ const AvailableSesions = ({
                           router.push("/login?redirect=/reservas");
                         } else {
                           if (
-                            user?.can_reserve === false &&
+                            userData?.can_reserve === false &&
                             s.type === Services.YOGA
                           ) {
                             toast.info(

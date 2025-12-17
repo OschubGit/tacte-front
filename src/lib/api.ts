@@ -69,10 +69,16 @@ export const api = {
     }
   },
 
-  getUser: async () => {
+  getUser: async (userId: string) => {
     const response = await fetch(
-      `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.USER}`,
-      {}
+      `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.USER}?user_id=${userId}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      }
     );
 
     return response.json();

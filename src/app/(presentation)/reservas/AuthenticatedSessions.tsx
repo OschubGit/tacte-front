@@ -1,10 +1,12 @@
 import { Sessions } from "@/lib/types";
-import React from "react";
+import React, { useEffect } from "react";
 import ReservedSesions from "./ReservedSesions";
 import AvailableSesions from "./AvailableSesions";
 import CanceledSesions from "./CanceledSesions";
 import TabsReserves from "./TabsReserves";
 import { TabNames } from "@/lib/enums";
+import { api } from "@/lib/api";
+import { useAuthStore } from "@/stores/authStore";
 
 const AuthenticatedSessions = ({
   sessions,
@@ -19,6 +21,15 @@ const AuthenticatedSessions = ({
   activeTab: string;
   setActiveTab: (tab: string) => void;
 }) => {
+  const user = useAuthStore((state) => state.user);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      await api.getUser(user?.id.toString() || "");
+    };
+    fetchUser();
+  }, []);
+
   return sessions?.length > 0 ? (
     (() => {
       const sortedSessions = sessions?.sort((a, b) => {
