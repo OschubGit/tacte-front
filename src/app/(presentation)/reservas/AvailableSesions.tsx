@@ -6,6 +6,8 @@ import IconList from "@/app/(components)/icons/IconList";
 import { useAuthStore } from "@/stores/authStore";
 import { useRouter } from "next/navigation";
 import { translateType } from "@/lib/functions";
+import { toast } from "react-toastify";
+import { Services } from "@/lib/enums";
 
 const AvailableSesions = ({
   availableSessions,
@@ -18,7 +20,7 @@ const AvailableSesions = ({
 }) => {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const router = useRouter();
-
+  const user = useAuthStore((state) => state.user);
   return (
     <>
       {availableSessions?.length > 0 && (
@@ -100,8 +102,17 @@ const AvailableSesions = ({
                         if (!isAuthenticated) {
                           router.push("/login?redirect=/reservas");
                         } else {
-                          setOpenDrawer(true);
-                          setSession(s);
+                          if (
+                            user?.can_reserve === false &&
+                            s.type === Services.YOGA
+                          ) {
+                            toast.info(
+                              "Todavía no tienes una suscripción activa."
+                            );
+                          } else {
+                            setOpenDrawer(true);
+                            setSession(s);
+                          }
                         }
                       }}
                       className="rounded-md px-2.5 py-1.5 text-sm bg-tacte-primary-500 text-white hover:bg-tacte-primary-400 font-semibold cursor-pointer"

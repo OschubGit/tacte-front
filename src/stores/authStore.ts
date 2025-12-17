@@ -7,6 +7,8 @@ interface User {
   id: number;
   name: string;
   email: string;
+  can_reserve: boolean;
+  accepted_legal_terms: number;
 }
 
 interface AuthState {

@@ -12,5 +12,6 @@ export const API_CONFIG = {
     PUBLIC_SESSIONS: "/sessions-public",
     RECOVERY_PASSWORD: "/recovery-password",
     ACCEPT_LEGAL_TERMS_UNREGISTERED: "/accept-legal-terms-unregistered",
+    ACCEPT_LEGAL_TERMS: "/accept-legal-terms",
   },
 };
