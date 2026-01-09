@@ -35,6 +35,12 @@ const products = [
     icon: IconMassage,
   },
   {
+    name: "Masaje deportivo",
+    description: "Alivia tensiones y reduce el estrés",
+    href: "/servicios/masaje-deportivo",
+    icon: IconMassage,
+  },
+  {
     name: "Entrenamiento funcional",
     description: "Para mejorar tu bienestar físico",
     href: "/servicios/deporte-funcional",
