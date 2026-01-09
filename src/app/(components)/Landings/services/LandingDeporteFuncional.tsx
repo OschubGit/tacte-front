@@ -4,7 +4,6 @@ import LandingFeatureSection from "../LandingFeatureSection";
 import SimpleCarrousel from "../../Carrousel/SimpleCarrousel";
 import LandingBenefits from "../LandingBenefits";
 import CTACenteredWithGradient from "../../CTAs/CTACenteredWithGradient";
-import LandingAboutMeSticky from "../LandingAboutMeSticky";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
 import { Services } from "@/lib/enums";

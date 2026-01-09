@@ -6,13 +6,14 @@ import IconYoga from "../icons/IconYoga";
 import IconMassage from "../icons/IconMassage";
 import Link from "next/link";
 import iconHand from "../icons/iconHand";
+import IconMancuernas from "../icons/IconMancuernas";
 
 const features = [
   {
-    name: "Quiromasaje y Osteopatía",
+    name: "Masaje Técnico y Relajante",
     description:
       "Ayudamos a las personas a mejorar su calidad de vida con masajes y también a evaluar estructuras para saber como poder enfocar un tratamiento.",
-    href: "/servicios/quiromasaje-osteopatia",
+    href: "/servicios/masaje",
     icon: IconMassage,
   },
   {
@@ -49,6 +50,13 @@ const features = [
       "La misión es cuidar tu parte mas externa de tu cuerpo. El cuerpo hay que tratarlo bien con masajes y mimarlo con los mejores tratamientos.",
     href: "/servicios/esteticien",
     icon: iconHand,
+  },
+  {
+    name: "Entrenamiento funcional",
+    description:
+      "Mejora tu fuerza, movilidad y equilibrio con un entrenamiento funcional adaptado a ti. Movimientos reales, efectivos y seguros para sentirte más fuerte en tu día a día.",
+    href: "/servicios/deporte-funcional",
+    icon: IconMancuernas,
   },
 ];
 

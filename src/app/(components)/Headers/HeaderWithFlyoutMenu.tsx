@@ -29,15 +29,15 @@ import IconMancuernas from "../icons/IconMancuernas";
 
 const products = [
   {
-    name: "Quiromasaje y Osteopatía",
-    description: "Para relajar y mejorar la salud de tu cuerpo",
-    href: "/servicios/quiromasaje-osteopatia",
+    name: "Masaje",
+    description: "Alivia tensiones y reduce el estrés",
+    href: "/servicios/masaje",
     icon: IconMassage,
   },
   {
     name: "Entrenamiento funcional",
     description: "Para mejorar tu bienestar físico",
-    href: "/servicios/entrenamiento-funcional",
+    href: "/servicios/deporte-funcional",
     icon: IconMancuernas,
   },
   {

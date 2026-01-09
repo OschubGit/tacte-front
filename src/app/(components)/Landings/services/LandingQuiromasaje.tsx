@@ -44,46 +44,46 @@ interface LandingHeroProps {
 
 const features = [
   {
-    name: "Osteopatía estructural",
+    name: "Masaje relajante",
     description:
-      "Enfocada en músculos, articulaciones y postura. Ideal para aliviar dolores de espalda, cuello y mejorar la movilidad.",
+      "Técnica suave y fluida enfocada en reducir el estrés, relajar la musculatura y generar una sensación profunda de bienestar.",
   },
   {
-    name: "Osteopatía visceral",
+    name: "Masaje terapéutico",
     description:
-      "Mejora la movilidad y función de órganos internos como el hígado, estómago o intestinos.",
+      "Trabajo manual específico para aliviar contracturas, sobrecargas y molestias musculares derivadas de posturas, tensión o esfuerzo físico.",
   },
   {
-    name: "Osteopatía craneal",
+    name: "Masaje descontracturante",
     description:
-      "Trabaja sobre el cráneo y sistema nervioso central. Recomendada para migrañas, estrés, insomnio y vértigos.",
+      "Aplicación de maniobras más profundas para liberar nudos musculares, mejorar la movilidad y reducir dolores persistentes.",
   },
   {
-    name: "Enfoque integral",
+    name: "Enfoque personalizado",
     description:
-      "Combina distintas técnicas para acompañar procesos de recuperación física, emocional y postural.",
+      "Cada sesión se adapta a tu estado físico y emocional, combinando técnicas de masaje según tus necesidades para un resultado eficaz y duradero.",
   },
 ];
 
 const benefits = [
   {
-    name: "Recuperación del equilibrio corporal",
+    name: "Reducción del estrés y mayor bienestar",
     description:
-      "La osteopatía restablece la armonía entre músculos, articulaciones y sistema nervioso, mejorando la postura, la movilidad y la vitalidad en tu día a día.",
+      "El masaje activa la relajación del sistema nervioso, disminuye la tensión emocional y favorece un estado de calma y equilibrio.",
     href: "#",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "Alivio del dolor y reducción de tensiones",
+    name: "Alivio del dolor y liberación muscular",
     description:
-      "A través de técnicas manuales específicas, libera bloqueos y contracturas, disminuyendo dolores musculares, articulares y molestias derivadas del estrés.",
+      "Mediante técnicas manuales específicas se reducen contracturas, rigidez y molestias musculares asociadas a la vida diaria o al esfuerzo físico.",
     href: "#",
     icon: LockClosedIcon,
   },
   {
-    name: "Mejora del bienestar integral",
+    name: "Mejora de la movilidad y la circulación",
     description:
-      "Favorece la conexión entre el sistema musculoesquelético, visceral y craneal, ayudando al cuerpo a funcionar de manera más eficiente y a recuperar su capacidad de autorregulación.",
+      "El masaje estimula la circulación sanguínea y linfática, favoreciendo la oxigenación de los tejidos y una mayor flexibilidad corporal.",
     href: "#",
     icon: ArrowPathIcon,
   },
@@ -91,29 +91,29 @@ const benefits = [
 
 const faqs = [
   {
-    question: "¿Qué es la osteopatía?",
+    question: "¿Qué es un masaje terapéutico?",
     answer:
-      "Es una terapia manual que ayuda a equilibrar el cuerpo actuando sobre músculos, articulaciones, órganos y sistema nervioso para mejorar la salud de forma integral.",
+      "Es una técnica manual que actúa sobre la musculatura y los tejidos blandos para reducir tensiones, aliviar molestias y mejorar el bienestar general.",
   },
   {
-    question: "¿Qué problemas puede tratar?",
+    question: "¿Qué problemas puede ayudar a mejorar?",
     answer:
-      "Dolores de espalda, cuello y articulaciones, migrañas, vértigos, insomnio, problemas digestivos y respiratorios, secuelas de traumatismos, estrés y disfunciones posturales.",
+      "Dolores musculares, contracturas, tensión cervical, sobrecargas por estrés, fatiga, rigidez, molestias lumbares, falta de descanso y problemas derivados de una mala postura.",
   },
   {
-    question: "¿Es segura la osteopatía?",
+    question: "¿Es seguro recibir un masaje?",
     answer:
-      "Sí, la osteopatía es una práctica no invasiva y segura cuando se realiza por un profesional cualificado.",
+      "Sí, siempre que lo realice un masajista cualificado. Es una técnica no invasiva y apta para la mayoría de personas.",
   },
   {
-    question: "¿Puedo combinarla con otros tratamientos?",
+    question: "¿Puedo combinar el masaje con otros tratamientos?",
     answer:
-      "Por supuesto. La osteopatía es complementaria a la medicina tradicional, fisioterapia, nutrición, psicología y otros enfoques de salud.",
+      "Por supuesto. El masaje complementa la fisioterapia, osteopatía, entrenamiento físico, terapias de bienestar y enfoques de salud integrativa, entre otros.",
   },
   {
     question: "¿Cuántas sesiones necesito?",
     answer:
-      "Depende de cada caso. Algunas molestias mejoran en pocas sesiones, mientras que en procesos crónicos se recomienda un tratamiento más prolongado.",
+      "Depende de tu objetivo. Una sola sesión puede aliviar tensiones puntuales, pero para molestias recurrentes o estrés acumulado se recomiendan sesiones regulares.",
   },
 ];
 
@@ -121,7 +121,7 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
   return (
     <>
       <LandingHero
-        title="Recupera tu cuerpo con Osteopatía"
+        title="Recupera. Revitaliza."
         description="Terapia manual integral para aliviar dolores, mejorar tu movilidad y ayudarte a reconectar con tu bienestar natural."
         backgroundImage="/images/hero_osteopatia.webp"
         type={Services.OSTEOPATHY}
@@ -144,7 +144,7 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
       <LandingAboutMe
         title="Alex Monzó"
         subtitle="Sobre mi"
-        content="Soy especialista en osteopatía estructural, visceral y craneal. Mi misión es ayudarte a mejorar tu calidad de vida mediante un enfoque integral y personalizado. Cada sesión está orientada a escuchar tu cuerpo, identificar bloqueos y acompañarte en tu proceso de recuperación."
+        content="Especialista en masajes técnicos y relajantes. Mi misión es ayudarte a mejorar tu calidad de vida mediante un enfoque integral y personalizado. Cada sesión está orientada a escuchar tu cuerpo, identificar bloqueos y acompañarte en tu proceso de recuperación."
         imagesVert={[
           "/services/masage-vert-1.webp",
           "/services/masage-vert-2.webp",
@@ -153,9 +153,9 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
         ]}
       />
       <LandingFeatureSection
-        subtitle="Beneficios de la osteopatía"
+        subtitle="Beneficios de los masajes"
         title="Un tratamiento integral para tu bienestar"
-        description="La osteopatía ayuda a mejorar la movilidad, aliviar dolores y promover el equilibrio natural del cuerpo a través de técnicas manuales."
+        description="Alivia tensiones, reduce el estrés y mejora la funcionalidad del cuerpo en el día a día."
         features={features}
         image={{
           src: "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
