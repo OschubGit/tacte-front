@@ -20,6 +20,7 @@ const services = [
   { id: 2, name: "Yoga", value: "yoga" },
   { id: 3, name: "Fisioterapia y Pilates", value: "pilates" },
   { id: 4, name: "Nutrición", value: "nutrition" },
+  { id: 5, name: "Entrenamiento funcional", value: "functional-training" },
   /* { id: 5, name: "Estética", value: "aesthetics" }, */
   /* { id: 6, name: "Psicología", value: "psychology" }, */
 ];
