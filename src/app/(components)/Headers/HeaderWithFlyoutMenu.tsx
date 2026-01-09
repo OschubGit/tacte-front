@@ -36,7 +36,7 @@ const products = [
   },
   {
     name: "Masaje deportivo",
-    description: "Alivia tensiones y reduce el estrés",
+    description: "Para mejorar tu rendimiento deportivo",
     href: "/servicios/masaje-deportivo",
     icon: IconMassage,
   },
