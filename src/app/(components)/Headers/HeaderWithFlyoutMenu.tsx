@@ -25,6 +25,7 @@ import { useAuth } from "@/hooks/useAuth";
 import IconCalendar from "../icons/IconCalendar";
 import iconHand from "../icons/iconHand";
 import IconPilates from "../icons/IconPilates";
+import IconMancuernas from "../icons/IconMancuernas";
 
 const products = [
   {
@@ -34,10 +35,10 @@ const products = [
     icon: IconMassage,
   },
   {
-    name: "Psicología",
-    description: "Para mejorar tu bienestar mental",
-    href: "/servicios/psicologia",
-    icon: IconPsicology,
+    name: "Entrenamiento funcional",
+    description: "Para mejorar tu bienestar físico",
+    href: "/servicios/entrenamiento-funcional",
+    icon: IconMancuernas,
   },
   {
     name: "Fisioterapia y Pilates",
@@ -50,6 +51,12 @@ const products = [
     description: "Trabaja con tu cuerpo y mente",
     href: "/servicios/yoga",
     icon: IconYoga,
+  },
+  {
+    name: "Psicología",
+    description: "Para mejorar tu bienestar mental",
+    href: "/servicios/psicologia",
+    icon: IconPsicology,
   },
   {
     name: "Esteticien",

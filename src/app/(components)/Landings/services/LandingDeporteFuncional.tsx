@@ -11,24 +11,24 @@ import { Services } from "@/lib/enums";
 
 const features = [
   {
-    name: "Niños y jóvenes",
+    name: "Evaluación inicial personalizada",
     description:
-      "Entrenamientos dinámicos y divertidos que mejoran coordinación, equilibrio y fuerza, fomentando el movimiento consciente y hábitos saludables desde edades tempranas.",
+      "Análisis de tu condición física, objetivos y limitaciones para diseñar un plan de entrenamiento completamente adaptado a tus necesidades específicas.",
   },
   {
-    name: "Adultos",
+    name: "Progresión gradual y segura",
     description:
-      "Sesiones adaptadas para mejorar fuerza funcional, resistencia y movilidad, facilitando un mejor rendimiento en las actividades diarias y laborales.",
+      "Entrenamientos estructurados que evolucionan contigo, aumentando la intensidad y complejidad de forma progresiva para maximizar resultados sin riesgo de lesiones.",
   },
   {
-    name: "Personas mayores",
+    name: "Movimientos funcionales reales",
     description:
-      "Trabajo específico de equilibrio, estabilidad y fuerza del core para mantener autonomía, prevenir caídas y mejorar la calidad de vida.",
+      "Ejercicios que replican acciones de tu vida cotidiana, mejorando tu capacidad para realizar actividades diarias con mayor facilidad y eficiencia.",
   },
   {
-    name: "Enfoque funcional",
+    name: "Material versátil y adaptable",
     description:
-      "Entrenamientos basados en movimientos naturales y multiarticulares, utilizando peso corporal y material como bandas elásticas, TRX, mancuernas y fitball.",
+      "Utilizamos peso corporal, bandas elásticas, TRX, mancuernas y fitball para crear entrenamientos variados y efectivos que se ajustan a cualquier nivel.",
   },
 ];
 
@@ -93,24 +93,26 @@ const LandingDeporteFuncional = ({ service }: { service: string }) => {
           linkText: "Descubre cómo funciona",
           linkHref: "#que-es",
         }}
-        backgroundImage="/images/hero_psicologia.jpg"
+        backgroundImage="/services/dep-1.png"
       />
       <LandingAboutMe
-        subtitle="Sobre mi"
-        title="Laura Amorós"
-        content="Soy graduada en Psicología por la Universitat Oberta de Cataluña y me he formado en terapias de tercera generación, un enfoque que combina aceptación, autocompasión y regulación emocional. Cuento con especialización en depresión posparto y una trayectoria acompañando a niños, adolescentes y adultos en diferentes etapas de la vida. Mi misión es crear un espacio seguro, cercano y libre de juicios donde puedas ser escuchado, comprendido y acompañado en tu proceso de crecimiento personal y bienestar emocional."
+        subtitle="¿Qué es el entrenamiento funcional?"
+        title="Entrenamientos"
+        content="
+        El entrenamiento funcional es un enfoque que se centra en el desarrollo de habilidades y capacidades físicas para mejorar la calidad de vida y la capacidad de adaptación a diferentes situaciones. Se basa en movimientos naturales y multiarticulares, utilizando peso corporal y material como bandas elásticas, TRX, mancuernas y fitball.
+        "
         imagesVert={[
-          "/services/psicologia-vert-1.webp",
-          "/services/psicologia-vert-2.webp",
-          "/services/psicologia-vert-3.webp",
-          "/services/psicologia-vert-4.webp",
+          "/services/dep-2.png",
+          "/services/dep-3.png",
+          "/services/dep-4.png",
+          "/services/dep-5.png",
         ]}
       />
       <LandingFeatureSection
-        title="Acompañamiento adaptado a cada etapa de la vida"
-        description="Cada persona vive y siente de manera única. Por eso adapto el proceso terapéutico a tus necesidades y momento vital, ofreciendo un espacio cercano y práctico."
+        title="Entrenamientos adaptados a ti"
+        description="Cada persona tiene objetivos, nivel físico y necesidades diferentes. Por eso diseño programas de entrenamiento funcional personalizados que se ajustan a tu condición actual, objetivos y ritmo de progresión, garantizando resultados efectivos y seguros."
         features={features}
-        imagesVert={["/services/psicologia-vert-5.webp"]}
+        imagesVert={["/services/dep-6.png"]}
       />
       <LandingBenefits benefits={benefits} />
       <SimpleCarrousel />
