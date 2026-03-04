@@ -15,14 +15,14 @@ const navigation = {
       href: "/servicios/masaje-deportivo",
     },
 
-    { name: "Psicología", href: "/servicios/psicologia" },
+    /* { name: "Psicología", href: "/servicios/psicologia" }, */
     {
       name: "Fisioterapia y Pilates",
       href: "/servicios/fisioterapia-pilates",
     },
     { name: "Yoga", href: "/servicios/yoga" },
     { name: "Esteticién", href: "/servicios/esteticien" },
-    { name: "Nutrición", href: "/servicios/nutricion" },
+    /* { name: "Nutrición", href: "/servicios/nutricion" }, */
     { name: "Canal ético", href: "https://tactesalud.canales-eticos.com/#/" },
   ],
   social: [

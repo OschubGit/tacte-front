@@ -28,7 +28,7 @@ const people = [
     description:
       "Soy fisioterapeuta graduada por la UMH, con más de 10 años de experiencia y especialización en suelo pélvico, embarazo y posparto. Complemento mi práctica con acupuntura, aromaterapia y ejercicio terapéutico. Mi misión es escuchar, comprender y acompañar a cada paciente en su proceso.",
   },
-  {
+  /* {
     name: "Laura Amorós",
     role: "Psicología y Acompañamiento Emocional",
     imageUrl: "/profesionals/laura.webp",
@@ -36,8 +36,8 @@ const people = [
     link: "/profesionales/laura-amoros",
     description:
       "Soy psicóloga graduada por la Universitat Oberta de Cataluña, con especialización en depresión posparto y terapias de tercera generación. Mi enfoque integra aceptación, autocompasión y regulación emocional para acompañar a niños, adolescentes y adultos en sus procesos vitales.",
-  },
-  {
+  }, */
+  /*  {
     name: "Raquel Polo",
     role: "Nutricionista",
     imageUrl: "/profesionals/raquel.webp",
@@ -45,7 +45,7 @@ const people = [
     link: "/profesionales/raquel-polo",
     description:
       "Soy dietista-nutricionista graduada por la Universidad de Alicante, con especialización en nutrición deportiva y trastornos de la conducta alimentaria. Mi enfoque se basa en crear hábitos saludables y sostenibles, adaptados a tu estilo de vida y objetivos personales.",
-  },
+  }, */
   {
     name: "Isabel Barberá",
     role: "Estética y Belleza",

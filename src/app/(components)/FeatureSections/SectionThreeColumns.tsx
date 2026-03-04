@@ -16,7 +16,7 @@ const features = [
     href: "/servicios/masaje",
     icon: IconMassage,
   },
-  {
+  /* {
     name: "Nutrición",
     description:
       "Incluye mediciones (antropometrías), planing de comidas y recetas adaptadas a tus necesidades y horarios de tu dia a dia.",
@@ -29,7 +29,7 @@ const features = [
       "El objetivo es comprender como sentimos y pensamos. Puede aplicarse en la salud mental, la educación, el trabajo o el desarrollo personal.",
     href: "/servicios/psicologia",
     icon: IconPsicology,
-  },
+  }, */
   {
     name: "Yoga",
     description:

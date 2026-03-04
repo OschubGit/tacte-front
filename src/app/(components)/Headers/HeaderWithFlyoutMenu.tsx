@@ -58,24 +58,24 @@ const products = [
     href: "/servicios/yoga",
     icon: IconYoga,
   },
-  {
+  /* {
     name: "Psicología",
     description: "Para mejorar tu bienestar mental",
     href: "/servicios/psicologia",
     icon: IconPsicology,
-  },
+  }, */
   {
     name: "Esteticien",
     description: "Siente bien y cuida tu cuerpo",
     href: "/servicios/esteticien",
     icon: iconHand,
   },
-  {
+  /* {
     name: "Nutrición",
     description: "La base de tu bienestar",
     href: "/servicios/nutricion",
     icon: IconNutrition,
-  },
+  }, */
 ];
 
 export default function HeaderWithFlyoutMenu() {
