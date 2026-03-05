@@ -1,11 +1,7 @@
-"use client";
-
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,20 +24,16 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 }); */
 
-/* export const metadata: Metadata = {
-    title: "Tacte",
-    description: "Bienestar integral",
-}; */
+export const metadata: Metadata = {
+  title: "Tacte",
+  description: "Bienestar integral",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navigate = useRouter();
-  useEffect(() => {
-    navigate.push("/mantenimiento");
-  }, []);
   return (
     <html lang="en">
       <body className={`antialiased`}>
