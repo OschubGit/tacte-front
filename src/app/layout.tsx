@@ -4,8 +4,8 @@ import "./globals.css";
 import { ToastContainer } from "react-toastify";
 
 const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 /* const inter = Inter({
@@ -25,21 +25,22 @@ const geistMono = Geist_Mono({
 }); */
 
 export const metadata: Metadata = {
-    title: "Tacte",
-    description: "Bienestar integral",
+  title: "Tacte",
+  description: "Bienestar integral",
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body className={`antialiased`}>
-                <ToastContainer />
-                {children}
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body className={`antialiased`}>
+        <ToastContainer />
+        <p>hey</p>
+        {children}
+      </body>
+    </html>
+  );
 }
