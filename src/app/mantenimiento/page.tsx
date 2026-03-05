@@ -18,8 +18,7 @@ export default function Mantenimiento() {
           </h1>
           <p className="mt-6 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
             Nuestra web está temporalmente en modo mantenimiento para mejorar tu
-            experiencia. Por favor, vuelve en unos minutos. ¡Gracias por tu
-            paciencia!
+            experiencia.
           </p>
         </div>
       </main>
