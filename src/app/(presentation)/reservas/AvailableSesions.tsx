@@ -117,7 +117,8 @@ const AvailableSesions = ({
                         } else {
                           if (
                             userData?.can_reserve === false &&
-                            s.type === Services.YOGA
+                            (s.type === Services.YOGA ||
+                              s.type === Services.FUNCTIONAL_TRAINING)
                           ) {
                             toast.info(
                               "Todavía no tienes una suscripción activa."

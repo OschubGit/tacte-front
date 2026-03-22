@@ -29,13 +29,15 @@ export default function Drawer({
   const user = useAuthStore((state) => state.user);
   const [openConfirmationModal, setOpenConfirmationModal] = useState(false);
   const [openCancelationModal, setOpenCancelationModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleReserve = async () => {
+    setIsLoading(true);
     await api
       .reserveSession(
         String(user?.id),
         String(session?.id),
-        String(session?.type)
+        String(session?.type),
       )
       .then(() => {
         toast.success("Sesión reservada correctamente", {
@@ -49,6 +51,7 @@ export default function Drawer({
           theme: "light",
           transition: Slide,
         });
+        setIsLoading(false);
         onReservationChange(); // Actualizar la lista de sesiones
         onClose(); // Cerrar el drawer
         setOpenConfirmationModal(false); // Cerrar el modal de confirmación
@@ -66,7 +69,9 @@ export default function Drawer({
           transition: Slide,
         });
         console.error("Error al reservar sesión...", error);
+        setIsLoading(false);
       });
+    setIsLoading(false);
   };
 
   const handleCancel = async () => {
@@ -76,7 +81,7 @@ export default function Drawer({
       .cancelReservation(
         String(user?.id),
         String(session?.id),
-        String(session?.type)
+        String(session?.type),
       )
       .then(() => {
         toast.success("Reserva cancelada correctamente", {
@@ -201,7 +206,7 @@ export default function Drawer({
                             <dt className="text-gray-500">Hora de inicio</dt>
                             <dd className="text-tacte-primary-900">
                               {new Date(
-                                `1970-01-01T${session.start_time}`
+                                `1970-01-01T${session.start_time}`,
                               ).toLocaleTimeString("es-ES", {
                                 hour: "2-digit",
                                 minute: "2-digit",
@@ -214,7 +219,7 @@ export default function Drawer({
                             <dt className="text-gray-500">Hora de fin</dt>
                             <dd className="text-tacte-primary-900">
                               {new Date(
-                                `1970-01-01T${session.end_time}`
+                                `1970-01-01T${session.end_time}`,
                               ).toLocaleTimeString("es-ES", {
                                 hour: "2-digit",
                                 minute: "2-digit",
@@ -314,6 +319,7 @@ export default function Drawer({
             <InformationCircleIcon className="size-6 text-blue-600" />
           </div>
         }
+        disabled={isLoading}
         onAction={handleReserve}
       />
       <ConfirmationModal
@@ -322,6 +328,7 @@ export default function Drawer({
         title="Vas a cancelar la reserva"
         description="Para resevarla de nuevo deberás ponerte en contacto con el administrador."
         buttonText="Cancelar reserva"
+        disabled={isLoading}
         icon={
           <div className="mx-auto flex size-12 items-center justify-center rounded-full bg-rose-100">
             <XMarkIcon className="size-6 text-red-600" />

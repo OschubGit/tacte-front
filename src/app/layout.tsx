@@ -38,7 +38,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased`}>
         <ToastContainer />
-        <p>hey</p>
         {children}
       </body>
     </html>

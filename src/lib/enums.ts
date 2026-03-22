@@ -12,5 +12,5 @@ export enum Services {
   OSTEOPATHY = "osteopathy",
   PSYCHOLOGY = "psychology",
   AESTHETICS = "aesthetics",
-  FUNCTIONAL_TRAINING = "functional-training",
+  FUNCTIONAL_TRAINING = "functional",
 }
