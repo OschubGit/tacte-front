@@ -37,13 +37,13 @@ const features = [
     href: "/servicios/yoga",
     icon: IconYoga,
   },
-  {
+  /* {
     name: "Fisioterapia y Pilates",
     description:
       "En fisioterapia y pilates evaluamos tus patologías y con ello trabajar para mejorar tu calidad de vida, la fuerza, equilibrio, resistencia y respiración.",
     href: "/servicios/fisioterapia-pilates",
     icon: IconYoga,
-  },
+  }, */
   {
     name: "Estética",
     description:

@@ -19,7 +19,7 @@ const people = [
     description:
       "Soy graduada en Pedagogía de la Danza y he integrado el yoga en mi camino como una práctica de conexión cuerpo-mente. Mi objetivo es crear un espacio donde cada persona pueda habitar su cuerpo, cultivar calma y transformar su relación consigo misma.",
   },
-  {
+  /* {
     name: "Vera Dominguez",
     role: "Fisioterapia y Pilates",
     imageUrl: "/profesionals/vera.webp",
@@ -27,7 +27,7 @@ const people = [
     link: "/profesionales/vera-dominguez",
     description:
       "Soy fisioterapeuta graduada por la UMH, con más de 10 años de experiencia y especialización en suelo pélvico, embarazo y posparto. Complemento mi práctica con acupuntura, aromaterapia y ejercicio terapéutico. Mi misión es escuchar, comprender y acompañar a cada paciente en su proceso.",
-  },
+  }, */
   /* {
     name: "Laura Amorós",
     role: "Psicología y Acompañamiento Emocional",

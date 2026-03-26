@@ -16,10 +16,10 @@ const navigation = {
     },
 
     /* { name: "Psicología", href: "/servicios/psicologia" }, */
-    {
+    /* {
       name: "Fisioterapia y Pilates",
       href: "/servicios/fisioterapia-pilates",
-    },
+    }, */
     { name: "Yoga", href: "/servicios/yoga" },
     { name: "Esteticién", href: "/servicios/esteticien" },
     /* { name: "Nutrición", href: "/servicios/nutricion" }, */

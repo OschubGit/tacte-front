@@ -46,12 +46,12 @@ const products = [
     href: "/servicios/deporte-funcional",
     icon: IconMancuernas,
   },
-  {
+  /* {
     name: "Fisioterapia y Pilates",
     description: "Para mejorar tu bienestar físico",
     href: "/servicios/fisioterapia-pilates",
     icon: IconPilates,
-  },
+  }, */
   {
     name: "Yoga",
     description: "Trabaja con tu cuerpo y mente",
