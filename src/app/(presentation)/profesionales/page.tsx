@@ -13,7 +13,7 @@ const people = [
   {
     name: "Alexandra Poveda",
     role: "Danza y Yoga",
-    imageUrl: "/profesionals/alexandra.webp",
+    imageUrl: "/profesionals/alexandra.jpeg",
     bio: "Soy graduada en Pedagogía de la Danza y he integrado el yoga en mi camino como una práctica de conexión cuerpo-mente. Mi objetivo es crear un espacio donde cada persona pueda habitar su cuerpo, cultivar calma y transformar su relación consigo misma.",
     link: "/profesionales/alexandra-poveda",
     description:
@@ -46,6 +46,15 @@ const people = [
     description:
       "Soy dietista-nutricionista graduada por la Universidad de Alicante, con especialización en nutrición deportiva y trastornos de la conducta alimentaria. Mi enfoque se basa en crear hábitos saludables y sostenibles, adaptados a tu estilo de vida y objetivos personales.",
   }, */
+  {
+    name: "Paco Monzó",
+    role: "Quiromasajista y Acupuntor",
+    imageUrl: "/profesionals/paco-monzo.jpeg",
+    bio: "Cuento con más de 10 años de experiencia en terapias alternativas, acompañando a cada persona desde la cercanía y la confianza. A través de la acupuntura y el masaje, mi objetivo es ayudarte a liberar tensiones y aliviar molestias, siempre de forma personalizada y respetuosa.",
+    link: "/profesionales/paco-monzo",
+    description:
+      "Cuento con más de 10 años de experiencia en terapias alternativas, acompañando a cada persona desde la cercanía y la confianza. A través de la acupuntura y el masaje, mi objetivo es ayudarte a liberar tensiones y aliviar molestias, siempre de forma personalizada y respetuosa.",
+  },
   {
     name: "Isabel Barberá",
     role: "Estética y Belleza",
