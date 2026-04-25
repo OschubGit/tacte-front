@@ -15,7 +15,7 @@ const features = [
   {
     name: "Niños",
     description:
-      "Acompañamiento en la gestión de emociones, trabajo en autoestima y habilidades sociales mediante dinámicas y juegos terapéuticos.",
+      "Acompañamiento en la gestión de emociones, trabajo en autoestima y habilidades sociales mediante dinámicas y juegos.",
   },
   {
     name: "Adolescentes",
@@ -50,7 +50,7 @@ const benefits = [
   {
     name: "Cercanía y acompañamiento",
     description:
-      "Un proceso terapéutico humano, cálido y adaptado a ti en cada momento vital.",
+      "Un proceso humano, cálido y adaptado a ti en cada momento vital.",
     href: "#cercania",
   },
 ];
@@ -109,7 +109,7 @@ const LandingPsicologia = ({ service }: { service: string }) => {
       />
       <LandingFeatureSection
         title="Acompañamiento adaptado a cada etapa de la vida"
-        description="Cada persona vive y siente de manera única. Por eso adapto el proceso terapéutico a tus necesidades y momento vital, ofreciendo un espacio cercano y práctico."
+        description="Cada persona vive y siente de manera única. Por eso adapto el proceso a tus necesidades y momento vital, ofreciendo un espacio cercano y práctico."
         features={features}
         imagesVert={["/services/psicologia-vert-5.webp"]}
       />

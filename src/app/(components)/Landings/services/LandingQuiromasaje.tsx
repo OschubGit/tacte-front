@@ -49,7 +49,7 @@ const features = [
       "Técnica suave y fluida enfocada en reducir el estrés, relajar la musculatura y generar una sensación profunda de bienestar.",
   },
   {
-    name: "Masaje terapéutico",
+    name: "Masaje manual",
     description:
       "Trabajo manual específico para aliviar contracturas, sobrecargas y molestias musculares derivadas de posturas, tensión o esfuerzo físico.",
   },
@@ -90,11 +90,6 @@ const benefits = [
 ];
 
 const faqs = [
-  {
-    question: "¿Qué es un masaje terapéutico?",
-    answer:
-      "Es una técnica manual que actúa sobre la musculatura y los tejidos blandos para reducir tensiones, aliviar molestias y mejorar el bienestar general.",
-  },
   {
     question: "¿Qué problemas puede ayudar a mejorar?",
     answer:

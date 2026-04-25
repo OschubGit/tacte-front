@@ -23,10 +23,10 @@ const people = [
     name: "Vera Dominguez",
     role: "Fisioterapia y Pilates",
     imageUrl: "/profesionals/vera.webp",
-    bio: "Soy fisioterapeuta graduada por la UMH, con más de 10 años de experiencia y especialización en suelo pélvico, embarazo y posparto. Complemento mi práctica con acupuntura, aromaterapia y ejercicio terapéutico. Mi misión es escuchar, comprender y acompañar a cada paciente en su proceso.",
+    bio: "Soy fisioterapeuta graduada por la UMH, con más de 10 años de experiencia y especialización en suelo pélvico, embarazo y posparto. Complemento mi práctica con acupuntura, aromaterapia y ejercicio. Mi misión es escuchar, comprender y acompañar a cada paciente en su proceso.",
     link: "/profesionales/vera-dominguez",
     description:
-      "Soy fisioterapeuta graduada por la UMH, con más de 10 años de experiencia y especialización en suelo pélvico, embarazo y posparto. Complemento mi práctica con acupuntura, aromaterapia y ejercicio terapéutico. Mi misión es escuchar, comprender y acompañar a cada paciente en su proceso.",
+      "Soy fisioterapeuta graduada por la UMH, con más de 10 años de experiencia y especialización en suelo pélvico, embarazo y posparto. Complemento mi práctica con acupuntura, aromaterapia y ejercicio. Mi misión es escuchar, comprender y acompañar a cada paciente en su proceso.",
   }, */
   /* {
     name: "Laura Amorós",

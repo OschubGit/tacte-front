@@ -14,13 +14,13 @@ import { useRouter } from "next/navigation";
 
 const features = [
   {
-    name: "Terapia manual",
+    name: "Masaje manual",
     description:
       "Masaje y técnicas manuales como base de la mayoría de tratamientos, buscando aliviar el dolor, relajar y generar confianza.",
     showIcon: true,
   },
   {
-    name: "Ejercicio terapéutico",
+    name: "Ejercicio",
     description:
       "Ejercicios personalizados y clases grupales de fisiopilates para recuperar movilidad, crear hábitos saludables y empoderarte en tu recuperación.",
     showIcon: true,
@@ -49,7 +49,7 @@ const benefits = [
   {
     name: "Recuperación activa",
     description:
-      "A través del ejercicio terapéutico aprenderás a moverte con mayor seguridad y confianza.",
+      "A través del ejercicio aprenderás a moverte con mayor seguridad y confianza.",
     href: "#recuperacion",
   },
   {
@@ -98,7 +98,7 @@ const LandingFisioterapia = ({ service }: { service: string }) => {
     <>
       <LandingHero
         title="Recupera tu bienestar desde un enfoque integral"
-        description="Fisioterapia, ejercicio terapéutico y técnicas complementarias para aliviar el dolor, reconectar con tu cuerpo y recuperar la calidad de vida."
+        description="Fisioterapia, ejercicio y técnicas complementarias para aliviar el dolor, reconectar con tu cuerpo y recuperar la calidad de vida."
         backgroundImage="/images/hero_yoga.webp"
         type={Services.PILATES}
         phone="644561382"
@@ -106,7 +106,7 @@ const LandingFisioterapia = ({ service }: { service: string }) => {
       <LandingAboutMe
         subtitle="Sobre mi"
         title="Vera Dominguez"
-        content="Me gradué en Fisioterapia por la UMH hace más de 10 años y desde entonces he seguido un camino de aprendizaje y especialización en suelo pélvico, embarazo y posparto. Complementé mi formación con acupuntura y moxibustión, siguiendo la escuela de mis padres. Actualmente investigo sobre el dolor crónico y aplico un enfoque integral que combina terapia manual, ejercicio terapéutico, técnicas complementarias como aromaterapia y acupuntura, y propuestas innovadoras como la Técnica Raindrop. Mi misión es escucharte, comprender tu situación y acompañarte en el proceso de recuperar la confianza en tu cuerpo y tu bienestar."
+        content="Me gradué en Fisioterapia por la UMH hace más de 10 años y desde entonces he seguido un camino de aprendizaje y especialización en suelo pélvico, embarazo y posparto. Complementé mi formación con acupuntura y moxibustión, siguiendo la escuela de mis padres. Actualmente investigo sobre el dolor crónico y aplico un enfoque integral que combina terapia manual, ejercicio, técnicas complementarias como aromaterapia y acupuntura, y propuestas innovadoras como la Técnica Raindrop. Mi misión es escucharte, comprender tu situación y acompañarte en el proceso de recuperar la confianza en tu cuerpo y tu bienestar."
         imagesVert={[
           "/services/pilates-vert-1.webp",
           "/services/pilates-vert-2.webp",
