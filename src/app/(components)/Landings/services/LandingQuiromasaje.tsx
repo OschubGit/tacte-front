@@ -103,7 +103,7 @@ const faqs = [
   {
     question: "¿Puedo combinar el masaje con otros tratamientos?",
     answer:
-      "Por supuesto. El masaje complementa la fisioterapia, osteopatía, entrenamiento físico, terapias de bienestar y enfoques de salud integrativa, entre otros.",
+      "Por supuesto. El masaje complementa la fisioterapia, osteopatía, entrenamiento físico, prácticas de bienestar y enfoques de salud integrativa, entre otros.",
   },
   {
     question: "¿Cuántas sesiones necesito?",
@@ -117,7 +117,7 @@ const LandingQuiromasaje = ({ service }: { service: string }) => {
     <>
       <LandingHero
         title="Recupera. Revitaliza."
-        description="Terapia manual integral para aliviar dolores, mejorar tu movilidad y ayudarte a reconectar con tu bienestar natural."
+        description="Práctica manual integral para aliviar dolores, mejorar tu movilidad y ayudarte a reconectar con tu bienestar natural."
         backgroundImage="/images/hero_osteopatia.webp"
         type={Services.OSTEOPATHY}
         phone="698903934"

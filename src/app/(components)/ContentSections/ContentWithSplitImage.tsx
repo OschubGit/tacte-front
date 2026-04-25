@@ -81,7 +81,7 @@ export default function ContentWithSplitImage() {
                   Atención personalizada,
                 </span>{" "}
                 cada persona es única, y también lo son sus necesidades. Por eso
-                adaptamos nuestras terapias para ofrecerte un acompañamiento
+                adaptamos nuestras prácticas para ofrecerte un acompañamiento
                 cercano y a tu medida.{" "}
                 <span className="underline font-bold">Ambiente relajante,</span>{" "}
                 desde la música hasta la iluminación, hemos diseñado un entorno

@@ -32,10 +32,10 @@ const people = [
     name: "Laura Amorós",
     role: "Psicología y Acompañamiento Emocional",
     imageUrl: "/profesionals/laura.webp",
-    bio: "Soy psicóloga graduada por la Universitat Oberta de Cataluña, con especialización en depresión posparto y terapias de tercera generación. Mi enfoque integra aceptación, autocompasión y regulación emocional para acompañar a niños, adolescentes y adultos en sus procesos vitales.",
+    bio: "Soy psicóloga graduada por la Universitat Oberta de Cataluña, con especialización en depresión posparto y de tercera generación. Mi enfoque integra aceptación, autocompasión y regulación emocional para acompañar a niños, adolescentes y adultos en sus procesos vitales.",
     link: "/profesionales/laura-amoros",
     description:
-      "Soy psicóloga graduada por la Universitat Oberta de Cataluña, con especialización en depresión posparto y terapias de tercera generación. Mi enfoque integra aceptación, autocompasión y regulación emocional para acompañar a niños, adolescentes y adultos en sus procesos vitales.",
+      "Soy psicóloga graduada por la Universitat Oberta de Cataluña, con especialización en depresión posparto y de tercera generación. Mi enfoque integra aceptación, autocompasión y regulación emocional para acompañar a niños, adolescentes y adultos en sus procesos vitales.",
   }, */
   /*  {
     name: "Raquel Polo",
@@ -50,10 +50,10 @@ const people = [
     name: "Paco Monzó",
     role: "Quiromasajista y Acupuntor",
     imageUrl: "/profesionals/paco-monzo.jpeg",
-    bio: "Cuento con más de 10 años de experiencia en terapias alternativas, acompañando a cada persona desde la cercanía y la confianza. A través de la acupuntura y el masaje, mi objetivo es ayudarte a liberar tensiones y aliviar molestias, siempre de forma personalizada y respetuosa.",
+    bio: "Cuento con más de 10 años de experiencia en prácticas alternativas, acompañando a cada persona desde la cercanía y la confianza. A través de la acupuntura y el masaje, mi objetivo es ayudarte a liberar tensiones y aliviar molestias, siempre de forma personalizada y respetuosa.",
     link: "/profesionales/paco-monzo",
     description:
-      "Cuento con más de 10 años de experiencia en terapias alternativas, acompañando a cada persona desde la cercanía y la confianza. A través de la acupuntura y el masaje, mi objetivo es ayudarte a liberar tensiones y aliviar molestias, siempre de forma personalizada y respetuosa.",
+      "Cuento con más de 10 años de experiencia en prácticas alternativas, acompañando a cada persona desde la cercanía y la confianza. A través de la acupuntura y el masaje, mi objetivo es ayudarte a liberar tensiones y aliviar molestias, siempre de forma personalizada y respetuosa.",
   },
   {
     name: "Isabel Barberá",

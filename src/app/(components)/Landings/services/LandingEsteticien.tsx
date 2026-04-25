@@ -54,7 +54,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
           "Reducción, reafirmación, cavitación, presoterapia y técnicas combinadas para cumplir tus objetivos con resultados visibles.",
       },
       {
-        name: "Masajes y terapias holísticas",
+        name: "Masajes y holísticas",
         description:
           "Shiatsu, aromaterapia, piedras volcánicas, reiki, cuencos tibetanos y envolturas corporales. El arte del bienestar en manos expertas.",
       },
@@ -89,7 +89,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
     {
       name: "Bienestar integral",
       description:
-        "No solo cuidamos tu piel, también tu energía y equilibrio emocional con masajes y terapias holísticas.",
+        "No solo cuidamos tu piel, también tu energía y equilibrio emocional con masajes y prácticas holísticas.",
       href: "/bienestar",
     },
   ];
@@ -128,7 +128,7 @@ const LandingEsteticien = ({ service }: { service: string }) => {
       <LandingAboutMe
         subtitle="Sobre mi"
         title="Isabel Barberá"
-        content="Soy una profesional apasionada por la estética y el bienestar, con experiencia en tratamientos faciales, corporales y terapias holísticas. Mi enfoque se basa en crear protocolos personalizados que unen tecnología avanzada y técnicas tradicionales, logrando resultados visibles y una experiencia de cuidado integral. Mi misión es ayudarte a resaltar tu belleza natural y a recuperar el equilibrio entre cuerpo y mente, siempre con un trato cercano y profesional."
+        content="Soy una profesional apasionada por la estética y el bienestar, con experiencia en tratamientos faciales, corporales y prácticas holísticas. Mi enfoque se basa en crear protocolos personalizados que unen tecnología avanzada y técnicas tradicionales, logrando resultados visibles y una experiencia de cuidado integral. Mi misión es ayudarte a resaltar tu belleza natural y a recuperar el equilibrio entre cuerpo y mente, siempre con un trato cercano y profesional."
         imagesVert={[
           "/services/skeyndor-1.jpg",
           "/services/skeyndor-2.jpg",

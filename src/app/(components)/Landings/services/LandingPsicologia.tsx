@@ -30,7 +30,7 @@ const features = [
   {
     name: "Enfoque innovador",
     description:
-      "Trabajo con terapias de tercera generación, integrando aceptación, autocompasión y regulación emocional para una vida más consciente.",
+      "Trabajo con prácticas de tercera generación, integrando aceptación, autocompasión y regulación emocional para una vida más consciente.",
   },
 ];
 
@@ -64,7 +64,7 @@ const faqs = [
   {
     question: "¿Con qué enfoques trabajas?",
     answer:
-      "Trabajo principalmente con terapias de tercera generación, que integran aceptación, autocompasión y regulación emocional, siempre adaptándome a cada persona.",
+      "Trabajo principalmente con prácticas de tercera generación, que integran aceptación, autocompasión y regulación emocional, siempre adaptándome a cada persona.",
   },
   {
     question: "¿Atiendes tanto online como presencial?",
@@ -99,7 +99,7 @@ const LandingPsicologia = ({ service }: { service: string }) => {
       <LandingAboutMe
         subtitle="Sobre mi"
         title="Laura Amorós"
-        content="Soy graduada en Psicología por la Universitat Oberta de Cataluña y me he formado en terapias de tercera generación, un enfoque que combina aceptación, autocompasión y regulación emocional. Cuento con especialización en depresión posparto y una trayectoria acompañando a niños, adolescentes y adultos en diferentes etapas de la vida. Mi misión es crear un espacio seguro, cercano y libre de juicios donde puedas ser escuchado, comprendido y acompañado en tu proceso de crecimiento personal y bienestar emocional."
+        content="Soy graduada en Psicología por la Universitat Oberta de Cataluña y me he formado en prácticas de tercera generación, un enfoque que combina aceptación, autocompasión y regulación emocional. Cuento con especialización en depresión posparto y una trayectoria acompañando a niños, adolescentes y adultos en diferentes etapas de la vida. Mi misión es crear un espacio seguro, cercano y libre de juicios donde puedas ser escuchado, comprendido y acompañado en tu proceso de crecimiento personal y bienestar emocional."
         imagesVert={[
           "/services/psicologia-vert-1.webp",
           "/services/psicologia-vert-2.webp",
