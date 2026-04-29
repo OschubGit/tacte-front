@@ -54,9 +54,9 @@ const features = [
       "Maniobras orientadas a reducir la fatiga, aliviar la sobrecarga muscular y acelerar la recuperación después del esfuerzo.",
   },
   {
-    name: "Trabajo profundo y preventivo",
+    name: "Trabajo profundo y correctivo",
     description:
-      "Intervención sobre puntos de tensión, adherencias y desequilibrios musculares para prevenir lesiones y optimizar la función corporal.",
+      "Intervención sobre puntos de tensión, adherencias y desequilibrios musculares para optimizar el rendimiento y la función corporal.",
   },
   {
     name: "Enfoque técnico y personalizado",
@@ -67,9 +67,10 @@ const features = [
 
 const benefits = [
   {
-    name: "Prevención de lesiones",
+    name: "Cuidado y equilibrio muscular",
     description:
-      "Ayuda a detectar y liberar tensiones acumuladas, evitando sobrecargas y desequilibrios musculares que pueden derivar en lesiones.",
+      "Contribuye a detectar y liberar tensiones acumuladas, evitando sobrecargas y ayudando a mantener el equilibrio y la salud de la musculatura.",
+
     href: "#",
     icon: CloudArrowUpIcon,
   },

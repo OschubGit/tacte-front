@@ -85,7 +85,7 @@ const faqs = [
   {
     question: "¿Ofreces también tratamientos de mantenimiento o prevención?",
     answer:
-      "Sí, además de tratar lesiones y patologías, trabajamos en la prevención y en el cuidado continuo de tu bienestar físico.",
+      "Sí, además de tratar distintas patologías, también te acompañamos en el cuidado y mantenimiento continuo de tu bienestar físico.",
   },
 ];
 

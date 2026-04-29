@@ -18,12 +18,6 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    id: 1,
-    name: "Rocio Baeza",
-    text: "Llevo viniendo desde hace 5 años y recomiendo 100% sus servicios. Me ha tratado varias lesiones, de las cuales he salido recuperada y también voy una vez al mes para revisiones periódicas y mantenimiento de mi dolor de espalda y gracias a lo que estudia y se forma, hemos podido conseguir una gran mejora. Es un gran profesional y una gran persona.",
-    rating: 5,
-  },
-  {
     id: 2,
     name: "Belén Cayetano costas",
     text: "Estuve muchos años con dolor en los antebrazos,incapacitante muchos días.Años de buscar una solución entre las diferentes alternativas no encontré apenas alivio. Hasta que llegué a Alex y en una sesión se quedó con el ochenta por ciento de mi dolor.He seguido sus indicaciones y estoy restablecida completamente. Le estoy muy agradecida, lo recomiendo sin ninguna duda.Además de la calidad y calided humana que vas a encontrar.",
@@ -74,7 +68,7 @@ const testimonials: Testimonial[] = [
   {
     id: 10,
     name: "SwToMek",
-    text: "Mi fisio de confianza , un trato único y profesional. Después de unas 40 sesiones lo que puedo decir es que sabe muy bien lo que hace, y que siempre me saca de las lesiones y molestias",
+    text: "Mi fisio de confianza , un trato único y profesional. Después de unas 40 sesiones lo que puedo decir es que sabe muy bien lo que hace, y que siempre me saca de las sobrecargas y molestias",
     rating: 5,
   },
   {

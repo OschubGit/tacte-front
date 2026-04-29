@@ -17,7 +17,7 @@ const features = [
   {
     name: "Progresión gradual y segura",
     description:
-      "Entrenamientos estructurados que evolucionan contigo, aumentando la intensidad y complejidad de forma progresiva para maximizar resultados sin riesgo de lesiones.",
+      "Entrenamientos estructurados que evolucionan contigo, aumentando la intensidad y complejidad de forma progresiva para maximizar resultados y promover una práctica segura.",
   },
   {
     name: "Movimientos funcionales reales",
@@ -39,10 +39,10 @@ const benefits = [
     href: "#fuerza-util",
   },
   {
-    name: "Prevención de lesiones",
+    name: "Agilidad y coordinación",
     description:
-      "El trabajo de movilidad, estabilidad y core ayuda a reducir el riesgo de lesiones y mejora la postura corporal.",
-    href: "#prevencion",
+      "Mejora tu agilidad y coordinación a través de ejercicios dinámicos que conectan mente y cuerpo, permitiendo movimientos más fluidos y eficientes en tu vida diaria.",
+    href: "#agilidad-coordinacion",
   },
   {
     name: "Entrenamiento adaptado",
