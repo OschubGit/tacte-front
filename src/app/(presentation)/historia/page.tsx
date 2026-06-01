@@ -1,7 +1,7 @@
 const stats = [
   { label: "Años de experiencia", value: "+10" },
   { label: "Servicios de bienestar", value: "+5" },
-  { label: "Profesionales especializados", value: "4" },
+  { label: "Profesionales especializados", value: "3" },
 ];
 
 const values = [
@@ -43,11 +43,13 @@ const team = [
     role: "Osteopatía y Quiromasaje",
     imageUrl: "/profesionals/alex-ptoffesional.webp",
   },
+  /* YOGA_DISABLED — Alexandra Poveda
   {
     name: "Alexandra Poveda",
     role: "Danza y Yoga",
     imageUrl: "/profesionals/alexandra.jpeg",
   },
+  */
   {
     name: "Paco Monzó",
     role: "Quiromasajista y Acupuntor",
@@ -133,6 +135,7 @@ export default function HistoryPage() {
                     </div>
                   </div>
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                    {/* YOGA_DISABLED
                     <div className="relative">
                       <img
                         alt="Yoga"
@@ -141,6 +144,7 @@ export default function HistoryPage() {
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>
+                    */}
                     <div className="relative">
                       <img
                         alt="Osteopatía"
@@ -162,8 +166,8 @@ export default function HistoryPage() {
                     <div className="relative">
                       <img
                         alt="Bienestar"
-                        src="/images/split_image.webp"
-                        className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        src="/images/tacte-fig.jpeg"
+                        className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg filter grayscale brightness-50"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>

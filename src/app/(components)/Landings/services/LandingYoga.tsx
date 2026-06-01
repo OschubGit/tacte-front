@@ -1,3 +1,5 @@
+// YOGA_DISABLED
+/*
 import React from "react";
 import LandingHero from "../LandingHero";
 import LandingFeatureSection from "../LandingFeatureSection";
@@ -37,29 +39,19 @@ const benefits = [
     description:
       "Mejora tu flexibilidad, fuerza y postura a través de movimientos conscientes que revitalizan el cuerpo.",
     href: "#bienestar-fisico",
-    /* icon: (props) => <svg {...props} fill="none" stroke="currentColor" strokeWidth={2}><path d="M12 20c4.418 0 8-3.582 8-8S16.418 4 12 4 4 7.582 4 12s3.582 8 8 8z"/><path d="M12 8v4l3 3"/></svg> */
   },
   {
     name: "Equilibrio emocional",
     description:
       "Aprende a reconocer y soltar tensiones internas, cultivando calma y claridad en tu vida cotidiana.",
     href: "#equilibrio-emocional",
-    /* icon: (props) => <svg {...props} fill="none" stroke="currentColor" strokeWidth={2}><path d="M12 3v18m9-9H3"/></svg> */
   },
   {
     name: "Autoconocimiento",
     description:
       "Explora tus sensaciones y emociones a través de la respiración y la observación consciente.",
     href: "#autoconocimiento",
-    /* icon: (props) => <svg {...props} fill="none" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg> */
   },
-  /* {
-        name: "Conexión integral",
-        description:
-            "Encuentra la unión entre cuerpo, mente y espíritu en cada práctica, creando un espacio sagrado de crecimiento.",
-        href: "#conexion-integral",
-        icon: (props) => <svg {...props} fill="none" stroke="currentColor" strokeWidth={2}><path d="M4.5 12.75l6 6 9-13.5"/></svg>
-    }, */
 ];
 
 const faqs = [
@@ -106,13 +98,6 @@ const LandingYoga = ({ service }: { service: string }) => {
           "/services/yoga-vert-4.webp",
         ]}
       />
-      {/*  <LandingAboutMeSticky
-                subtitle="Sobre mi"
-                title="Alexandra Poveda"
-                content="El movimiento siempre ha sido mi manera de comprender el mundo. Desde muy pequeña descubrí que a través del cuerpo podía expresarme, explorar mis emociones y darle sentido a lo que me rodeaba. A los tres años empecé a bailar y, desde entonces, mi cuerpo se convirtió en un lugar sagrado de aprendizaje, un espacio donde descubrí que cada gesto y cada respiración tienen un significado profundo."
-                imageSrc="https://images.unsplash.com/photo-1600618528240-fb9fc964b853?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                imageAlt=""
-            /> */}
       <LandingFeatureSection
         features={features}
         imagesVert={["/services/yoga-vert-5.webp"]}
@@ -124,5 +109,10 @@ const LandingYoga = ({ service }: { service: string }) => {
     </>
   );
 };
+
+export default LandingYoga;
+*/
+
+const LandingYoga = ({ service }: { service: string }) => null;
 
 export default LandingYoga;

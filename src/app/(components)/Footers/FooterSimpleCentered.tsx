@@ -20,9 +20,10 @@ const navigation = {
       name: "Fisioterapia y Pilates",
       href: "/servicios/fisioterapia-pilates",
     }, */
-    { name: "Yoga", href: "/servicios/yoga" },
+    /* YOGA_DISABLED { name: "Yoga", href: "/servicios/yoga" }, */
     { name: "Esteticién", href: "/servicios/esteticien" },
     /* { name: "Nutrición", href: "/servicios/nutricion" }, */
+    { name: "Historia", href: "/historia" },
     { name: "Canal ético", href: "https://tactesalud.canales-eticos.com/#/" },
   ],
   social: [

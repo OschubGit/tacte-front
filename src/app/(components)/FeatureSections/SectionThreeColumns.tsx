@@ -2,7 +2,7 @@
 
 import IconNutrition from "../icons/IconNutrition";
 import IconPsicology from "../icons/IconPsicology";
-import IconYoga from "../icons/IconYoga";
+// YOGA_DISABLED import IconYoga from "../icons/IconYoga";
 import IconMassage from "../icons/IconMassage";
 import Link from "next/link";
 import iconHand from "../icons/iconHand";
@@ -30,6 +30,7 @@ const features = [
     href: "/servicios/psicologia",
     icon: IconPsicology,
   }, */
+  /* YOGA_DISABLED
   {
     name: "Yoga",
     description:
@@ -37,6 +38,7 @@ const features = [
     href: "/servicios/yoga",
     icon: IconYoga,
   },
+  */
   /* {
     name: "Fisioterapia y Pilates",
     description:

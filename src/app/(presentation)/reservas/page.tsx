@@ -13,6 +13,11 @@ import Link from "next/link";
 import { TabNames } from "@/lib/enums";
 import ComboboxSelect from "@/app/(components)/ComboBox/Combobox";
 
+// YOGA_DISABLED — quitar filtro al reactivar yoga
+const YOGA_TYPE = "yoga";
+const withoutYogaSessions = (sessions: Sessions[]) =>
+  sessions.filter((s) => s.type !== YOGA_TYPE);
+
 export default function ReservasPage() {
   const defaultClassNames = getDefaultClassNames();
   const [sessions, setSessions] = useState<Sessions[]>([]);
@@ -31,7 +36,7 @@ export default function ReservasPage() {
         new Date().toISOString().split("T")[0],
       dateto: selected?.toISOString().split("T")[0],
     });
-    setSessions(sessions.sessions);
+    setSessions(withoutYogaSessions(sessions.sessions));
   };
 
   const fetchSessions = async (type?: string): Promise<void> => {
@@ -43,7 +48,7 @@ export default function ReservasPage() {
       dateto: selected?.toISOString().split("T")[0],
       user_id: user?.id ? String(user.id) : undefined,
     });
-    setSessions(sessions.sessions);
+    setSessions(withoutYogaSessions(sessions.sessions));
   };
 
   /* const getUserInfo = async (): Promise<void> => {

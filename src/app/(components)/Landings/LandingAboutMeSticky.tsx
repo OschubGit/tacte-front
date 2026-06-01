@@ -11,6 +11,7 @@ interface LandingAboutMeStickyProps {
 const LandingAboutMeSticky: React.FC<LandingAboutMeStickyProps> = ({
     subtitle = "Sobre mi",
     title = "Alexandra Poveda",
+    // YOGA_DISABLED: párrafo sobre Pedagogía de la Danza y yoga eliminado del content por defecto
     content = `El movimiento siempre ha sido mi manera de
     comprender el mundo. Desde muy pequeña descubrí
     que a través del cuerpo podía expresarme,
@@ -29,16 +30,6 @@ const LandingAboutMeSticky: React.FC<LandingAboutMeStickyProps> = ({
     habitar el cuerpo con conciencia es la mejor
     manera de acercarnos a lo que deseamos en la
     vida.
-    <br />
-    <br />
-    Soy graduada en Pedagogía de la Danza, y mi
-    recorrido me ha llevado a entrelazar este camino
-    con el yoga. Ambas disciplinas me han mostrado
-    que el cuerpo es mucho más que un vehículo: es
-    el fundamento de nuestra salud mental, emocional
-    y espiritual. En mis clases parto siempre de
-    este principio, guiando cada sesión para que sea
-    una experiencia de presencia y conexión.
     <br />
     <br />
     Cuando aprendemos a habitar el cuerpo con

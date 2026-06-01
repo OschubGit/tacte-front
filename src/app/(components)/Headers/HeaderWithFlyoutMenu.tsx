@@ -15,7 +15,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon, PhoneIcon } from "@heroicons/react/20/solid";
-import IconYoga from "../icons/IconYoga";
+// YOGA_DISABLED import IconYoga from "../icons/IconYoga";
 import IconPsicology from "../icons/IconPsicology";
 import IconMassage from "../icons/IconMassage";
 import IconNutrition from "../icons/IconNutrition";
@@ -52,12 +52,14 @@ const products = [
     href: "/servicios/fisioterapia-pilates",
     icon: IconPilates,
   }, */
+  /* YOGA_DISABLED
   {
     name: "Yoga",
     description: "Trabaja con tu cuerpo y mente",
     href: "/servicios/yoga",
     icon: IconYoga,
   },
+  */
   /* {
     name: "Psicología",
     description: "Para mejorar tu bienestar mental",
@@ -189,6 +191,12 @@ export default function HeaderWithFlyoutMenu() {
             </PopoverPanel>
           </Popover>
           <Link
+            href="/historia"
+            className="text-sm/6 font-semibold text-gray-900"
+          >
+            Historia
+          </Link>
+          <Link
             href="/profesionales"
             className="text-sm/6 font-semibold text-gray-900"
           >
@@ -288,6 +296,18 @@ export default function HeaderWithFlyoutMenu() {
                   </DisclosurePanel>
                 </Disclosure>
                 <Link
+                  href="/historia"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Historia
+                </Link>
+                <Link
+                  href="/profesionales"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Profesionales
+                </Link>
+                <Link
                   href={"/reservas"}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
@@ -299,12 +319,6 @@ export default function HeaderWithFlyoutMenu() {
                 >
                   Contacto
                 </Link> */}
-                <Link
-                  href="/profesionales"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Profesionales
-                </Link>
               </div>
               <div className="py-6">
                 {isAuthenticated ? (

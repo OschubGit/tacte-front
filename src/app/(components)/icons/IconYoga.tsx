@@ -1,5 +1,7 @@
 import React from "react";
 
+// YOGA_DISABLED
+/*
 const IconYoga = ({ color }: { color: string }) => {
     return (
         <svg
@@ -21,5 +23,10 @@ const IconYoga = ({ color }: { color: string }) => {
         </svg>
     );
 };
+*/
+
+const IconYoga = ({ color }: { color: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" />
+);
 
 export default IconYoga;

@@ -8,7 +8,7 @@ export enum TabNames {
 export enum Services {
   NUTRITION = "nutrition",
   PILATES = "pilates",
-  YOGA = "yoga",
+  // YOGA_DISABLED YOGA = "yoga",
   OSTEOPATHY = "osteopathy",
   PSYCHOLOGY = "psychology",
   AESTHETICS = "aesthetics",

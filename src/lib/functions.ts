@@ -25,8 +25,9 @@ export const translateType = (type: string) => {
   switch (type) {
     case "pilates":
       return "Pilates";
-    case "yoga":
-      return "Yoga";
+    // YOGA_DISABLED
+    // case "yoga":
+    //   return "Yoga";
     case "nutrition":
       return "Nutrición";
     case "aesthetics":

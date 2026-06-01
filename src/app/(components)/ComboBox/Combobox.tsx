@@ -17,7 +17,7 @@ const services = [
     name: "Quiromasaje y Osteopatía",
     value: "osteopathy",
   }, */
-  { id: 2, name: "Yoga", value: "yoga" },
+  /* YOGA_DISABLED { id: 2, name: "Yoga", value: "yoga" }, */
   /* { id: 3, name: "Fisioterapia y Pilates", value: "pilates" },
   { id: 4, name: "Nutrición", value: "nutrition" }, */
   { id: 5, name: "Entrenamiento funcional", value: "functional" },

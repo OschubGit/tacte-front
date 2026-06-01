@@ -10,6 +10,7 @@ const people = [
     description:
       "Mi propósito es acompañarte a recuperar tu bienestar a través de un enfoque global y adaptado a ti. En cada sesión trabajamos juntos para entender lo que tu cuerpo necesita, liberar tensiones y avanzar en tu proceso de sanación",
   },
+  /* YOGA_DISABLED — Alexandra Poveda
   {
     name: "Alexandra Poveda",
     role: "Danza y Yoga",
@@ -19,6 +20,7 @@ const people = [
     description:
       "Soy graduada en Pedagogía de la Danza y he integrado el yoga en mi camino como una práctica de conexión cuerpo-mente. Mi objetivo es crear un espacio donde cada persona pueda habitar su cuerpo, cultivar calma y transformar su relación consigo misma.",
   },
+  */
   /* {
     name: "Vera Dominguez",
     role: "Fisioterapia y Pilates",

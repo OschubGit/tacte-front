@@ -117,7 +117,7 @@ const AvailableSesions = ({
                         } else {
                           if (
                             userData?.can_reserve === false &&
-                            (s.type === Services.YOGA ||
+                            (/* YOGA_DISABLED s.type === Services.YOGA || */
                               s.type === Services.FUNCTIONAL_TRAINING)
                           ) {
                             toast.info(

@@ -54,7 +54,7 @@ export default function LandingHero({
   },
   title,
   description,
-  backgroundImage = "/services/yoga-alexandra.png",
+  backgroundImage = "/images/hero_team.webp",
   ctaPrimary = {
     text: "Reservar clase",
     href: "#",
@@ -118,8 +118,8 @@ export default function LandingHero({
                 {description}
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                {type !== Services.YOGA &&
-                type !== Services.NUTRITION &&
+                {/* YOGA_DISABLED: type !== Services.YOGA && */}
+                {type !== Services.NUTRITION &&
                 type !== Services.PILATES ? (
                   <a
                     href={phone ? `tel:${phone}` : "tel:+34698903934"}
