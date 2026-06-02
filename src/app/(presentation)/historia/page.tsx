@@ -167,7 +167,7 @@ export default function HistoryPage() {
                       <img
                         alt="Bienestar"
                         src="/images/tacte-fig.jpeg"
-                        className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg filter grayscale brightness-50"
+                        className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg filter grayscale b"
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>
@@ -247,7 +247,7 @@ export default function HistoryPage() {
         <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
           <img
             alt="Tacte centro de bienestar"
-            src="/images/hero_team.webp"
+            src="/images/history-image.jpeg"
             className="aspect-5/2 w-full object-cover outline-1 -outline-offset-1 outline-black/5 xl:rounded-3xl"
           />
         </div>
