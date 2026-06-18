@@ -94,7 +94,7 @@ const AvailableSesions = ({
                           {s.date.toString().split("-").reverse().join("-")}
                           {""} -{" "}
                           {new Date(
-                            `1970-01-01T${s.start_time}`
+                            `1970-01-01T${s.start_time}`,
                           ).toLocaleTimeString("es-ES", {
                             hour: "2-digit",
                             minute: "2-digit",
@@ -116,12 +116,12 @@ const AvailableSesions = ({
                           router.push("/login?redirect=/reservas");
                         } else {
                           if (
-                            userData?.can_reserve === false &&
-                            (/* YOGA_DISABLED s.type === Services.YOGA || */
-                              s.type === Services.FUNCTIONAL_TRAINING)
+                            userData?.can_reserve ===
+                              false /* YOGA_DISABLED s.type === Services.YOGA || */ &&
+                            s.type === Services.FUNCTIONAL_TRAINING
                           ) {
                             toast.info(
-                              "Todavía no tienes una suscripción activa."
+                              "Todavía no tienes una suscripción activa.",
                             );
                           } else {
                             setOpenDrawer(true);
@@ -129,7 +129,7 @@ const AvailableSesions = ({
                           }
                         }
                       }}
-                      className="rounded-md px-2.5 py-1.5 text-sm bg-tacte-primary-500 text-white hover:bg-tacte-primary-400 font-semibold cursor-pointer"
+                      className={`rounded-md px-2.5 py-1.5 text-sm bg-tacte-primary-500 text-white hover:bg-tacte-primary-400 font-semibold cursor-pointer disabled:bg-gray-300 disabled:cursor-not-allowed`}
                     >
                       Reservar
                     </button>
