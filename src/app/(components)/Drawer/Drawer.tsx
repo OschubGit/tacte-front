@@ -8,7 +8,7 @@ import {
 } from "@headlessui/react";
 import { InformationCircleIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Sessions } from "@/lib/types";
-import { hasMoreThanHalf } from "@/lib/functions";
+import { hasMoreThanHalf, mapMessageToError } from "@/lib/functions";
 import { api } from "@/lib/api";
 import { useAuthStore } from "@/stores/authStore";
 import { useState } from "react";
@@ -57,7 +57,7 @@ export default function Drawer({
         setOpenConfirmationModal(false); // Cerrar el modal de confirmación
       })
       .catch((error) => {
-        toast.error("Error al reservar sesión...", {
+        toast.error(mapMessageToError(error?.message ?? "Error al reservar sesión"), {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -100,7 +100,7 @@ export default function Drawer({
         setOpenCancelationModal(false); // Cerrar el modal de cancelación
       })
       .catch((error) => {
-        toast.error("Error al cancelar reserva...", {
+        toast.error(mapMessageToError(error?.message ?? "Error al cancelar reserva"), {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,

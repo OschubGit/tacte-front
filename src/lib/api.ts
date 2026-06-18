@@ -140,7 +140,13 @@ export const api = {
       }
     );
 
-    return response.json();
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data?.message ?? "Error al reservar sesión");
+    }
+
+    return data;
   },
 
   cancelReservation: async (
@@ -159,7 +165,13 @@ export const api = {
       }
     );
 
-    return response.json();
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data?.message ?? "Error al cancelar reserva");
+    }
+
+    return data;
   },
 
   publicSessions: async ({
