@@ -10,12 +10,12 @@ const SimpleCarrousel = () => {
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
         </div>
-        <div className="carousel-item">
+        {/* <div className="carousel-item">
           <img
-            src="/images/slider/slider_2.jpg"
+            src="/images/slider/"
             className="rounded-box max-w-90 opacity-50 hover:opacity-100"
           />
-        </div>
+        </div> */}
         <div className="carousel-item">
           <img
             src="/images/slider/slider_3.png"

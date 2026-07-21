@@ -247,7 +247,7 @@ export default function HistoryPage() {
         <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
           <img
             alt="Tacte centro de bienestar"
-            src="/images/history-image.jpeg"
+            src="/images/hero_osteopatia2.webp"
             className="aspect-5/2 w-full object-cover outline-1 -outline-offset-1 outline-black/5 xl:rounded-3xl"
           />
         </div>

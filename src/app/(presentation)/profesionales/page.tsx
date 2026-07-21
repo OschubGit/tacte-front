@@ -74,7 +74,7 @@ export default function TeamPage() {
       <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
         <img
           alt=""
-          src="/images/hero_team.webp"
+          src="/images/login.webp"
           className="absolute inset-0 -z-10 size-full object-cover opacity-10"
         />
         <div
