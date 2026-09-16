@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import LandingHero from "../LandingHero";
 import LandingFeatureSection from "../LandingFeatureSection";
