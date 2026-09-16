@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LandingHero from "../LandingHero";
 import LandingFeatureSection from "../LandingFeatureSection";
 import SimpleCarrousel from "../../Carrousel/SimpleCarrousel";
@@ -7,6 +7,7 @@ import CTACenteredWithGradient from "../../CTAs/CTACenteredWithGradient";
 import LandingFaqs from "../LandingFaqs";
 import LandingAboutMe from "../AboutMe";
 import { Services } from "@/lib/enums";
+import { useRouter } from "next/navigation";
 
 const features = [
   {
@@ -76,6 +77,11 @@ const faqs = [
 ];
 
 const LandingDeporteFuncional = ({ service }: { service: string }) => {
+  const navigate = useRouter();
+
+  useEffect(() => {
+    navigate.push("/");
+  }, []);
   return (
     <>
       <LandingHero

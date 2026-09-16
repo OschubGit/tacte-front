@@ -40,12 +40,12 @@ const products = [
     href: "/servicios/masaje-deportivo",
     icon: IconMassage,
   },
-  {
+  /*   {
     name: "Entrenamiento funcional",
     description: "Para mejorar tu bienestar físico",
     href: "/servicios/deporte-funcional",
     icon: IconMancuernas,
-  },
+  }, */
   /* {
     name: "Fisioterapia y Pilates",
     description: "Para mejorar tu bienestar físico",
@@ -85,11 +85,6 @@ export default function HeaderWithFlyoutMenu() {
   const pathname = usePathname();
   const router = useRouter();
   const callsToAction = [
-    {
-      name: !isAuthenticated ? "Regístrate" : "Reservas",
-      href: !isAuthenticated ? "/register" : "/reservas",
-      icon: !isAuthenticated ? IconRegisterUser : IconCalendar,
-    },
     { name: "Reserva", href: "tel:698903934", icon: PhoneIcon },
   ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -202,12 +197,7 @@ export default function HeaderWithFlyoutMenu() {
           >
             Profesionales
           </Link>
-          <Link
-            href={"/reservas"}
-            className="text-sm/6 font-semibold text-gray-900"
-          >
-            Reservas
-          </Link>
+
           {/* <Link
             href="/contacto"
             className="text-sm/6 font-semibold text-gray-900"
@@ -307,12 +297,7 @@ export default function HeaderWithFlyoutMenu() {
                 >
                   Profesionales
                 </Link>
-                <Link
-                  href={"/reservas"}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Reservas
-                </Link>
+
                 {/* <Link
                   href="/contacto"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"

@@ -12,6 +12,7 @@ import AuthenticatedSessions from "./AuthenticatedSessions";
 import Link from "next/link";
 import { TabNames } from "@/lib/enums";
 import ComboboxSelect from "@/app/(components)/ComboBox/Combobox";
+import { useRouter } from "next/navigation";
 
 // YOGA_DISABLED — quitar filtro al reactivar yoga
 const YOGA_TYPE = "yoga";
@@ -28,6 +29,7 @@ export default function ReservasPage() {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
   const [hasAcceptedLegalTerms, setHasAcceptedLegalTerms] = useState(false);
   const [activeTab, setActiveTab] = useState<string>(TabNames.ALL);
+  const navigate = useRouter();
 
   const fetchPublicSessions = async (): Promise<void> => {
     const sessions = await api.publicSessions({
@@ -57,12 +59,13 @@ export default function ReservasPage() {
   }; */
 
   useEffect(() => {
+    navigate.push("/");
     /* getUserInfo(); */
-    if (!isAuthenticated) {
+    /* if (!isAuthenticated) {
       fetchPublicSessions();
     } else {
       fetchSessions();
-    }
+    } */
   }, [isAuthenticated, selected]);
 
   const selectService = (service: string) => {
@@ -124,7 +127,7 @@ export default function ReservasPage() {
             booked: sessions
               ?.filter(
                 (session) =>
-                  session.cancelled === false && session.reserved_by_user
+                  session.cancelled === false && session.reserved_by_user,
               )
               .map((session) => new Date(session.date)),
             holidays: holidays,

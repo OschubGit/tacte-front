@@ -53,13 +53,13 @@ const features = [
     href: "/servicios/esteticien",
     icon: iconHand,
   },
-  {
+  /* {
     name: "Entrenamiento funcional",
     description:
       "Mejora tu fuerza, movilidad y equilibrio con un entrenamiento funcional adaptado a ti. Movimientos reales, efectivos y seguros para sentirte más fuerte en tu día a día.",
     href: "/servicios/deporte-funcional",
     icon: IconMancuernas,
-  },
+  }, */
 ];
 
 export default function SectionThreeColumns() {

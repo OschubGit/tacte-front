@@ -1,8 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import { PrimaryButton } from "../Buttons/Buttons";
 import SvgCercleDegradation from "../SVGDecoration/SvgCercleDegradation";
 import { useAuth } from "@/hooks/useAuth";
+import { PhoneIcon } from "@heroicons/react/20/solid";
 
 export default function HeroWithAngleImage({
   title,
@@ -30,12 +32,23 @@ export default function HeroWithAngleImage({
                   {description}
                 </p>
                 <div className="mt-10 flex items-center gap-x-6 font-secondary">
-                  <PrimaryButton href={"/reservas"}>
+                  {/*   <PrimaryButton href={"/reservas"}>
                     Reserva tu cita
-                  </PrimaryButton>
+                  </PrimaryButton> */}
                   {/* <PrimaryButtonLink href="#">
                                         Saber más
                                     </PrimaryButtonLink> */}
+                  <Link
+                    href={"tel:698903934"}
+                    className="rounded-md bg-tacte-primary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-tacte-primary-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 flex gap-3"
+                  >
+                    <PhoneIcon
+                      aria-hidden="true"
+                      className="size-5 flex-none"
+                      color="#fff"
+                    />
+                    Reserva tu cita
+                  </Link>
                 </div>
               </div>
             </div>
